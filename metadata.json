@@ -1,0 +1,6 @@
+{
+  "name": "Soloo Towing & Recovery",
+  "description": "Professional 24/7 towing, heavy-duty crane recovery, forklift services, and roadside assistance. Features a seamless booking interface, payment simulation, live tracking dashboard, test testimonials, and interactive chat support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
