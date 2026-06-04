@@ -64,16 +64,18 @@ export default function ContactTab() {
     <div id="contact-tab-wrapper" className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-12 space-y-16 bg-[#1a1a1a]">
       
       {/* Intro Header */}
-      <div className="text-left border-b border-white/10 pb-6 max-w-4xl">
-        <span className="text-[10px] font-black text-[#fbbf24] uppercase tracking-[0.25em] block">
-          24/7 COMMAND DESK ACTIVE
-        </span>
-        <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-white mt-2 leading-none">
-          Immediate Towing &amp; <br />
-          <span className="text-[#fbbf24]">Recovery Support Services</span>
-        </h1>
+      <div className="text-left pb-6">
+        <div className="inline-block bg-[#fbbf24] text-black px-6 py-5 border-4 border-black select-none max-w-4xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-4">
+          <span className="text-[10px] font-black uppercase tracking-[0.25em] block mb-1">
+            24/7 COMMAND DESK ACTIVE
+          </span>
+          <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none m-0">
+            Immediate Towing &amp; <br />
+            Recovery Support Services
+          </h1>
+        </div>
         <p className="text-[#f4f4f5] text-xs md:text-sm mt-3 max-w-2xl leading-relaxed font-semibold">
-          Need a heavy-duty crane quote, commercial machinery forklift contract, or standard highway rescue? Connect instantly to our active command center.
+          Need a heavy-duty crane quote, commercial machinery forklift contract, or standard highway rescue across Kenya, Uganda, or Tanzania? Connect instantly to our active regional command center.
         </p>
       </div>
 

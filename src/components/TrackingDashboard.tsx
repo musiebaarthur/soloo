@@ -302,13 +302,15 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
           
           {/* Dispatch Form Inputs (7 cols) */}
           <form id="dispatch-form" onSubmit={handleFormSubmit} className="lg:col-span-7 bg-[#151515] p-6 md:p-8 space-y-6 text-left">
-            <div className="border-b border-white/10 pb-4">
-              <span className="text-[9px] font-black tracking-widest text-[#fbbf24] uppercase">Step 1 — Mobilize Logistics Crew</span>
-              <h1 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mt-1 flex items-center gap-2">
-                <Truck className="w-8 h-8 text-[#fbbf24] animate-pulse shrink-0" /> Live Dispatch Hub
-              </h1>
-              <p className="text-xs text-gray-400">
-                Lock-in priority 24/7 commercial crew routing and secure instant GPS location telemetry.
+            <div className="pb-4">
+              <div className="inline-block bg-[#fbbf24] text-black px-4 py-3 border-2 border-black max-w-xl select-none mb-3 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+                <span className="text-[9px] font-black tracking-widest uppercase block mb-0.5">Step 1 — Mobilize Logistics Crew</span>
+                <h1 className="text-2xl md:text-3xl font-black uppercase tracking-tighter m-0 flex items-center gap-2">
+                  <Truck className="w-6 h-6 text-black shrink-0" /> Live Dispatch Hub
+                </h1>
+              </div>
+              <p className="text-xs text-zinc-300 font-semibold mt-1">
+                Lock-in priority 24/7 commercial crew routing across Kenya, Uganda, and Tanzania with secure instant GPS location telemetry.
               </p>
             </div>
 

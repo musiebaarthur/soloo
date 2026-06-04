@@ -10,6 +10,11 @@ import {
 } from 'lucide-react';
 import { TabType } from '../types';
 
+import orangeBus from '../assets/images/soloo_orange_bus_1780592084508.png';
+import recoveryFleet from '../assets/images/soloo_recovery_fleet_1780592101760.png';
+import tractorCarrier from '../assets/images/soloo_tractor_carrier_1780592118988.png';
+import hysterForklift from '../assets/images/soloo_hyster_forklift_1780592138839.png';
+
 interface HeroProps {
   onSelectTab: (tab: TabType) => void;
 }
@@ -48,7 +53,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
             </h2>
 
             <p className="text-base sm:text-lg text-[#f4f4f5] font-extrabold max-w-xl leading-relaxed drop-shadow-md">
-              Specialized roadside assistance, pivot rotator cranes, and forklift services. Real-time fleet tracking ensures we reach you in minutes, not hours. Fully bonded and active across all regional highways.
+              Specialized roadside assistance, pivot rotator cranes, and forklift services. Real-time fleet tracking ensures we reach you in minutes, not hours. Operating 24/7 across Kenya, Uganda, and Tanzania.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -167,34 +172,34 @@ export default function Hero({ onSelectTab }: HeroProps) {
       <section className="bg-[#151515] py-12 px-6 sm:px-10 lg:px-16 border-b border-white/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
-          <div className="p-5 bg-white/5 border border-white/10 rounded-none space-y-3">
+          <div className="p-5 bg-[#151515] border border-white/10 rounded-none space-y-3">
             <span className="text-3xl font-black text-[#fbbf24] italic tracking-tight block">24 / 7 / 365</span>
             <h4 className="font-extrabold text-white text-xs uppercase tracking-wider animate-pulse">ALWAYS ON WATCH</h4>
-            <p className="text-[#cbd5e1] text-xs font-bold leading-relaxed">
+            <p className="text-zinc-200 text-xs font-bold leading-relaxed">
               Our live operators and standby heavy riggers remain operational through late-night conditions.
             </p>
           </div>
 
-          <div className="p-5 bg-white/5 border border-white/10 rounded-none space-y-3">
-            <span className="text-3xl font-black text-[#fbbf24] italic tracking-tight block">KES 20,000,000</span>
-            <h4 className="font-extrabold text-white text-xs uppercase tracking-wider font-sans">COMPREHENSIVE BOND</h4>
-            <p className="text-[#cbd5e1] text-xs font-bold leading-relaxed">
-              Every transport is protected by custom logistics cargo variables safeguarding vehicle payloads.
+          <div className="p-5 bg-[#fbbf24] border-2 border-[#fbbf24] rounded-none space-y-3 text-black">
+            <span className="text-3xl font-black italic tracking-tight block">EAST AFRICA</span>
+            <h4 className="font-extrabold text-zinc-950 text-xs uppercase tracking-wider font-sans text-left">KENYA • UGANDA • TANZANIA</h4>
+            <p className="text-neutral-900 text-xs font-bold leading-relaxed text-left">
+              Broad network dispatch extending across borders with unified fleet standby nodes across EA corridors.
             </p>
           </div>
 
-          <div className="p-5 bg-white/5 border border-white/10 rounded-none space-y-3">
+          <div className="p-5 bg-[#151515] border border-white/10 rounded-none space-y-3">
             <span className="text-3xl font-black text-[#fbbf24] italic tracking-tight block">30+ HEAVY CARRIERS</span>
             <h4 className="font-extrabold text-white text-xs uppercase tracking-wider font-sans">DIVERSIFIED FLEET</h4>
-            <p className="text-[#cbd5e1] text-xs font-bold leading-relaxed">
+            <p className="text-zinc-200 text-xs font-bold leading-relaxed">
               From compact wheel-lifts to 40-ton cranes and warehouse forklifts, we handle all weight ratios.
             </p>
           </div>
 
-          <div className="p-5 bg-white/5 border border-white/10 rounded-none space-y-3">
+          <div className="p-5 bg-[#151515] border border-white/10 rounded-none space-y-3">
             <span className="text-3xl font-black text-[#fbbf24] italic tracking-tight block">LIVE GPS HUD</span>
             <h4 className="font-extrabold text-white text-xs uppercase tracking-wider font-sans">REAL-TIME TRAFFIC</h4>
-            <p className="text-[#cbd5e1] text-xs font-bold leading-relaxed">
+            <p className="text-zinc-200 text-xs font-bold leading-relaxed">
               Eliminate critical guesswork. High-frequency tracking shows exact dispatcher GPS telemetry.
             </p>
           </div>
@@ -228,22 +233,22 @@ export default function Hero({ onSelectTab }: HeroProps) {
             {/* Box 1 (Orange Bus) */}
             <div 
               onClick={() => onSelectTab('gallery')}
-              className="bg-[#1a1a1a] border border-white/15 hover:border-[#fbbf24] transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
+              className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
             >
               <div className="space-y-3.5">
-                <div className="aspect-[16/9] w-full overflow-hidden relative border border-white/5 bg-neutral-900">
+                <div className="aspect-[16/9] w-full overflow-hidden relative border-2 border-white bg-white">
                   <img 
-                    src="/src/assets/images/soloo_orange_bus_1780592084508.png"
+                    src={orangeBus}
                     alt="Orange Bus Recovery"
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-104 opacity-90"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute top-2 left-2 bg-[#fbbf24] text-black font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
+                  <div className="absolute top-2 left-2 bg-black text-[#fbbf24] font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
                     Live Action
                   </div>
                 </div>
                 <div className="space-y-1.5">
-                  <h4 className="font-extrabold text-white text-xs uppercase tracking-tight group-hover:text-[#fbbf24] transition-colors">
+                  <h4 className="font-extrabold text-[#fbbf24] text-xs uppercase tracking-tight group-hover:text-white transition-colors">
                     Heavy Duty Bus &amp; Fleet Recovery
                   </h4>
                   <p className="text-[11px] text-[#cbd5e1] font-bold leading-relaxed line-clamp-3">
@@ -260,22 +265,22 @@ export default function Hero({ onSelectTab }: HeroProps) {
             {/* Box 2 (Active Wreckers) */}
             <div 
               onClick={() => onSelectTab('gallery')}
-              className="bg-[#1a1a1a] border border-white/15 hover:border-[#fbbf24] transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
+              className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
             >
               <div className="space-y-3.5">
-                <div className="aspect-[16/9] w-full overflow-hidden relative border border-white/5 bg-neutral-900">
+                <div className="aspect-[16/9] w-full overflow-hidden relative border-2 border-white bg-white">
                   <img 
-                    src="/src/assets/images/soloo_recovery_fleet_1780592101760.png"
+                    src={recoveryFleet}
                     alt="Soloo Recovery Fleet"
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-104 opacity-90"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute top-2 left-2 bg-[#fbbf24] text-black font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
+                  <div className="absolute top-2 left-2 bg-black text-[#fbbf24] font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
                     Dispatch Depot
                   </div>
                 </div>
                 <div className="space-y-1.5">
-                  <h4 className="font-extrabold text-white text-xs uppercase tracking-tight group-hover:text-[#fbbf24] transition-colors">
+                  <h4 className="font-extrabold text-[#fbbf24] text-xs uppercase tracking-tight group-hover:text-white transition-colors">
                     Central Standard Wrecker Depot
                   </h4>
                   <p className="text-[11px] text-[#cbd5e1] font-bold leading-relaxed line-clamp-3">
@@ -292,22 +297,22 @@ export default function Hero({ onSelectTab }: HeroProps) {
             {/* Box 3 (Tractors Transport) */}
             <div 
               onClick={() => onSelectTab('gallery')}
-              className="bg-[#1a1a1a] border border-white/15 hover:border-[#fbbf24] transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
+              className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
             >
               <div className="space-y-3.5">
-                <div className="aspect-[16/9] w-full overflow-hidden relative border border-white/5 bg-neutral-900">
+                <div className="aspect-[16/9] w-full overflow-hidden relative border-2 border-white bg-white">
                   <img 
-                    src="/src/assets/images/soloo_tractor_carrier_1780592118988.png"
+                    src={tractorCarrier}
                     alt="Tractor Carry on Trailer"
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-104 opacity-90"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute top-2 left-2 bg-[#fbbf24] text-black font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
+                  <div className="absolute top-2 left-2 bg-black text-[#fbbf24] font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
                     Heavy Haul Cargo
                   </div>
                 </div>
                 <div className="space-y-1.5">
-                  <h4 className="font-extrabold text-white text-xs uppercase tracking-tight group-hover:text-[#fbbf24] transition-colors">
+                  <h4 className="font-extrabold text-[#fbbf24] text-xs uppercase tracking-tight group-hover:text-white transition-colors">
                     Tractors &amp; Plant Transportation
                   </h4>
                   <p className="text-[11px] text-[#cbd5e1] font-bold leading-relaxed line-clamp-3">
@@ -324,22 +329,22 @@ export default function Hero({ onSelectTab }: HeroProps) {
             {/* Box 4 (Yellow Forklift) */}
             <div 
               onClick={() => onSelectTab('gallery')}
-              className="bg-[#1a1a1a] border border-white/15 hover:border-[#fbbf24] transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
+              className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
             >
               <div className="space-y-3.5">
-                <div className="aspect-[16/9] w-full overflow-hidden relative border border-white/5 bg-neutral-900">
+                <div className="aspect-[16/9] w-full overflow-hidden relative border-2 border-white bg-white">
                   <img 
-                    src="/src/assets/images/soloo_hyster_forklift_1780592138839.png"
+                    src={hysterForklift}
                     alt="Yellow Forklift"
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-104 opacity-90"
+                    className="w-full h-full object-cover transition-transform duration-350 group-hover:scale-105"
                   />
-                  <div className="absolute top-2 left-2 bg-[#fbbf24] text-black font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
+                  <div className="absolute top-2 left-2 bg-black text-[#fbbf24] font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
                     Warehouse Lift
                   </div>
                 </div>
                 <div className="space-y-1.5">
-                  <h4 className="font-extrabold text-white text-xs uppercase tracking-tight group-hover:text-[#fbbf24] transition-colors">
+                  <h4 className="font-extrabold text-[#fbbf24] text-xs uppercase tracking-tight group-hover:text-white transition-colors">
                     Hyster Industrial Forklift Lease
                   </h4>
                   <p className="text-[11px] text-[#cbd5e1] font-bold leading-relaxed line-clamp-3">

@@ -153,16 +153,18 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
     <div id="services-page-container" className="py-12 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 space-y-16 bg-[#1a1a1a]">
       
       {/* Intro Header */}
-      <div className="text-left space-y-3 max-w-4xl border-b border-white/10 pb-6">
-        <span className="text-[10px] font-black text-[#fbbf24] uppercase tracking-[0.25em] block">
-          HEAVY FLEET &amp; RIGGING CAPABILITIES
-        </span>
-        <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-white">
-          Comprehensive Heavy <br />
-          <span className="text-[#fbbf24]">Recovery &amp; Dispatches</span>
-        </h1>
+      <div className="text-left pb-6">
+        <div className="inline-block bg-[#fbbf24] text-black px-6 py-5 border-4 border-black select-none max-w-4xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-4">
+          <span className="text-[10px] font-black uppercase tracking-[0.25em] block mb-1">
+            HEAVY FLEET &amp; RIGGING CAPABILITIES
+          </span>
+          <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none m-0">
+            Comprehensive Heavy <br />
+            Recovery &amp; Dispatches
+          </h1>
+        </div>
         <p className="text-[#f4f4f5] text-xs md:text-sm max-w-2xl leading-relaxed font-semibold">
-          From compact motorbikes to 40-ton prime movers and industrial warehouse cargo, Soloo Recovery maintains heavy-lifting crane systems, versatile forklift fleets, and rapid-response flatbeds.
+          From compact motorbikes to 40-ton prime movers and industrial warehouse cargo, Soloo Trucks Recovery maintains heavy-lifting crane systems, versatile forklift fleets, and rapid-response flatbeds across Kenya, Uganda, and Tanzania.
         </p>
       </div>
 
@@ -214,9 +216,9 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
           <div className="p-6 bg-white/5 border-t border-white/10 flex gap-3 text-left">
             <AlertTriangle className="w-5 h-5 text-[#fbbf24] shrink-0 mt-0.5" />
             <div className="text-[11px] space-y-1">
-              <h4 className="font-black uppercase text-[#fbbf24] tracking-wider">Nationwide Strategic Coverage</h4>
+              <h4 className="font-black uppercase text-[#fbbf24] tracking-wider">East African Regional Coverage</h4>
               <p className="text-[#cbd5e1] font-semibold leading-relaxed">
-                If stranded outside Nairobi limits, our highway-standby network will be routed to your coordinates. High-grade industrial contracts are fully insured up to KES 20,000,000 load liability.
+                Operating across regional highway corridors. Our robust East African network supports border transit logistics and high-capacity dispatch routes in Kenya, Uganda, and Tanzania.
               </p>
             </div>
           </div>

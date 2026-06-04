@@ -30,11 +30,11 @@ export default function Footer({ onSelectTab }: FooterProps) {
             onClick={() => handleNavClick('home')}
             className="flex flex-col text-left focus:outline-none"
           >
-            <h3 className="text-2xl font-black italic leading-none tracking-tighter text-[#fbbf24]">
+            <div className="bg-[#fbbf24] text-black px-4 py-2 border-2 border-black font-black uppercase tracking-tighter text-xl italic leading-none transition-transform duration-200 group-hover:scale-102 select-none inline-block">
               SOLOO TRUCKS<br />
-              <span className="text-white">RECOVERY</span>
-            </h3>
-            <span className="text-[8px] uppercase tracking-[0.2em] text-[#fbbf24]/50 font-bold mt-1">Industrial Logistics</span>
+              <span className="text-zinc-900 font-extrabold font-sans">RECOVERY</span>
+            </div>
+            <span className="text-[8px] uppercase tracking-[0.2em] text-[#fbbf24] font-black mt-1">East Africa Standby Fleet</span>
           </button>
 
           <p className="text-zinc-200 font-medium leading-relaxed max-w-sm text-[11px] md:text-xs">
@@ -130,7 +130,7 @@ export default function Footer({ onSelectTab }: FooterProps) {
           </div>
 
           <div className="hidden lg:flex items-center gap-3 border-l border-white/10 pl-3">
-            <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> KES 20M Risk Bond</span>
+            <span className="text-[#fbbf24] font-black uppercase tracking-wider text-[9px]">Kenya • Uganda • Tanzania</span>
           </div>
         </div>
       </div>
