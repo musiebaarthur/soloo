@@ -523,7 +523,7 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
               },
               {
                 question: "Where are your standby recovery vehicles based, and what areas do you cover?",
-                answer: "Our core central yard is situated on Mombasa Road, adjacent to City Cabanas, Nairobi. We also run dedicated standby patrol stations positioned strategically along Waiyaki Way (Kangemi Flyover interchange), Thika Superhighway (Clay Works), and Southern Bypass. This ensures response times remain under 25 minutes inside greater Nairobi. For long-distance heavy recovery, we support nationwide routing across Kenya."
+                answer: "Our core central command is based in Kondele, Kisumu, Kenya, but our fleet operations span across all of East Africa, with standby patrol stations positioned strategically along all major transit corridors in Kenya, Uganda, and Tanzania."
               },
               {
                 question: "What happens if my breakdown location is outside Nairobi or off-road?",

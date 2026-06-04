@@ -10,7 +10,6 @@ import {
 } from 'lucide-react';
 import { TabType } from '../types';
 
-import orangeBus from '../assets/images/soloo_orange_bus_1780592084508.png';
 import recoveryFleet from '../assets/images/soloo_recovery_fleet_1780592101760.png';
 import tractorCarrier from '../assets/images/soloo_tractor_carrier_1780592118988.png';
 import hysterForklift from '../assets/images/soloo_hyster_forklift_1780592138839.png';
@@ -60,7 +59,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
               <button
                 id="btn-hero-book"
                 onClick={() => onSelectTab('track-book')}
-                className="bg-[#fbbf24] hover:bg-white text-black font-black uppercase py-4 px-6 text-xs tracking-widest transition-colors rounded-none flex items-center gap-2"
+                className="bg-[#fbbf24] hover:bg-white text-black font-black uppercase py-4 px-6 text-xs tracking-widest transition-colors border-2 border-black rounded-none flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
               >
                 Order Direct Dispatch Now <ArrowRight className="w-4 h-4" />
               </button>
@@ -68,7 +67,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
               <button
                 id="btn-hero-services"
                 onClick={() => onSelectTab('services')}
-                className="bg-white/5 hover:bg-white/10 border border-white/10 text-white font-black uppercase py-4 px-6 text-xs tracking-widest transition-colors rounded-none"
+                className="bg-[#fbbf24] hover:bg-white text-black font-black uppercase py-4 px-6 text-xs tracking-widest transition-colors border-2 border-black rounded-none shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
               >
                 Explore Services &amp; Rates
               </button>
@@ -86,7 +85,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
                   type="text" 
                   value={pickupText}
                   onChange={(e) => setPickupText(e.target.value)}
-                  placeholder="e.g. Cabanas Metro, Nairobi" 
+                  placeholder="e.g. Kondele, Kisumu or Malaba Border" 
                   className="bg-transparent border-b border-white/20 py-2 text-xs md:text-sm text-white focus:outline-none focus:border-[#fbbf24] transition-colors"
                 />
               </div>
@@ -108,7 +107,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
 
             <button 
               onClick={handleShortcutSubmit}
-              className="w-full bg-[#fbbf24] hover:bg-white text-black font-black uppercase py-3.5 text-xs tracking-widest transition-colors rounded-none flex items-center justify-center gap-1.5"
+              className="w-full bg-[#fbbf24] hover:bg-white text-black font-black uppercase py-3.5 text-xs tracking-widest transition-colors border-2 border-black rounded-none flex items-center justify-center gap-1.5 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
             >
               Initialize Dispatch &amp; Estimate Rate <ArrowRight className="w-3.5 h-3.5 text-black" />
             </button>
@@ -221,48 +220,16 @@ export default function Hero({ onSelectTab }: HeroProps) {
             </div>
             <button
               onClick={() => onSelectTab('gallery')}
-              className="bg-[#fbbf24] hover:bg-white text-black font-black uppercase pr-4 pl-5 py-3 text-xs tracking-widest flex items-center gap-2 group self-start sm:self-center shrink-0 cursor-pointer transition-colors"
+              className="bg-[#fbbf24] hover:bg-white text-black font-black uppercase pr-4 pl-5 py-3 text-xs tracking-widest flex items-center gap-2 group self-start sm:self-center shrink-0 cursor-pointer transition-colors border-2 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
             >
               <span>Explore High Clarity Gallery</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            {/* Box 1 (Orange Bus) */}
-            <div 
-              onClick={() => onSelectTab('gallery')}
-              className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
-            >
-              <div className="space-y-3.5">
-                <div className="aspect-[16/9] w-full overflow-hidden relative border-2 border-white bg-white">
-                  <img 
-                    src={orangeBus}
-                    alt="Orange Bus Recovery"
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute top-2 left-2 bg-black text-[#fbbf24] font-black text-[8px] uppercase tracking-wider px-2 py-0.5">
-                    Live Action
-                  </div>
-                </div>
-                <div className="space-y-1.5">
-                  <h4 className="font-extrabold text-[#fbbf24] text-xs uppercase tracking-tight group-hover:text-white transition-colors">
-                    Heavy Duty Bus &amp; Fleet Recovery
-                  </h4>
-                  <p className="text-[11px] text-[#cbd5e1] font-bold leading-relaxed line-clamp-3">
-                    Professional, non-destructive recovery of multi-ton passenger buses and heavy commercial utility trucks.
-                  </p>
-                </div>
-              </div>
-              <div className="mt-4 pt-3.5 border-t border-white/5 text-[10px] text-[#fbbf24] font-black uppercase tracking-widest flex items-center gap-1.5 justify-end">
-                <span>ZOOM IMAGE</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#fbbf24]" />
-              </div>
-            </div>
-
-            {/* Box 2 (Active Wreckers) */}
+            {/* Box 1 (Active Wreckers) */}
             <div 
               onClick={() => onSelectTab('gallery')}
               className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
@@ -284,7 +251,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
                     Central Standard Wrecker Depot
                   </h4>
                   <p className="text-[11px] text-[#cbd5e1] font-bold leading-relaxed line-clamp-3">
-                    Our Mombasa Road headquarters hosting heavy rotator cranes, active flatbeds and emergency support cars.
+                    Our Kisumu Kondele headquarters hosting heavy rotator cranes, active flatbeds and emergency support cars.
                   </p>
                 </div>
               </div>
@@ -294,7 +261,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
               </div>
             </div>
 
-            {/* Box 3 (Tractors Transport) */}
+            {/* Box 2 (Tractors Transport) */}
             <div 
               onClick={() => onSelectTab('gallery')}
               className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"
@@ -326,7 +293,7 @@ export default function Hero({ onSelectTab }: HeroProps) {
               </div>
             </div>
 
-            {/* Box 4 (Yellow Forklift) */}
+            {/* Box 3 (Yellow Forklift) */}
             <div 
               onClick={() => onSelectTab('gallery')}
               className="bg-[#1a1a1a] border-2 border-[#fbbf24] hover:bg-neutral-900 transition-all p-4 rounded-none flex flex-col justify-between group cursor-pointer"

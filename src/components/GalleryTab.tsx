@@ -6,8 +6,6 @@
 import React, { useState } from 'react';
 import { Camera, ChevronRight, ChevronLeft, Maximize2, Info, Eye } from 'lucide-react';
 
-import orangeBus from '../assets/images/soloo_orange_bus_1780592084508.png';
-import recoveryFleet from '../assets/images/soloo_recovery_fleet_1780592101760.png';
 import tractorCarrier from '../assets/images/soloo_tractor_carrier_1780592118988.png';
 import hysterForklift from '../assets/images/soloo_hyster_forklift_1780592138839.png';
 
@@ -17,40 +15,22 @@ export default function GalleryTab() {
 
   const galleryItems = [
     {
-      id: 'slide-bus',
-      image: orangeBus,
-      thumbAlt: 'Soloo Orange Recovery Bus',
-      badge: 'Heavy Crane Lift Support',
-      title: 'WE PROVIDE HIGHEST QUALITY CRANE LIFTING & BUS RECOVERY',
-      subtext: 'Fast, courteous and highly efficient crane and plant movement services in Kenya, Uganda and Tanzania.',
-      spec: 'Rigged for 360-degree swamp/ditch pulls and mass-transit recovery loops.'
-    },
-    {
-      id: 'slide-fleet',
-      image: recoveryFleet,
-      thumbAlt: 'Soloo Active Fleet Yard',
-      badge: 'Soloo Standby Yard & Patrols',
-      title: '24/7 NATIONWIDE CO-ORDINATIVE FLEET ON STANDBY',
-      subtext: 'Modern yellow wreckers, sliding flatbed loaders, and high-capacity rotator rigging rigs.',
-      spec: 'Central stations in Nairobi (Mombasa Road/Cabanas), Malaba, and Namanga.'
-    },
-    {
       id: 'slide-tractor',
       image: tractorCarrier,
       thumbAlt: 'Tractors transported on Lowbed Trailer',
       badge: 'Multi-Axle Heavy Haul',
-      title: 'WE PROVIDE HIGHEST QUALITY TOWING & ESCORT TRANSPORTATION',
-      subtext: 'Safe cargo delivery of agricultural machinery, multi-ton transformers and oversized structures.',
-      spec: 'Fitted with military-grade securement chains and regional transit clearance.'
+      title: 'TOWING & ESCORT TRANSPORTATION',
+      subtext: 'Safe cargo delivery of agricultural machinery, multi-ton generators and oversized structures.',
+      spec: 'Fitted with robust securement chains and full regional transit clearances.'
     },
     {
       id: 'slide-forklift',
       image: hysterForklift,
       thumbAlt: 'Soloo Yellow Hyster Forklift',
-      badge: 'Industrial Warehouse Riggers',
-      title: 'WE PROVIDE HIGHEST QUALITY FORKLIFT & DEPOT LOGISTICS',
-      subtext: 'East African forklift rentals (2.5 Tons up to 10 Tons capacity) with licensed heavy handlers.',
-      spec: 'Available for immediate short/long term hire at highly cost-effective rates.'
+      badge: 'Industrial Depot Riggers',
+      title: 'FORKLIFT & MATERIAL HANDLING',
+      subtext: 'High-mast warehouse lift rentals (2.5 to 10 Tons capacity) with professional certified handlers.',
+      spec: 'Available for immediate delivery at highly competitive rates.'
     }
   ];
 
@@ -230,7 +210,7 @@ export default function GalleryTab() {
         <div className="lg:col-span-4 flex flex-col sm:flex-row gap-3 lg:justify-end">
           <a
             href="tel:0722154729"
-            className="bg-black hover:bg-neutral-900 text-white font-black text-xs uppercase tracking-widest py-4 px-6 text-center transition-colors rounded-none whitespace-nowrap"
+            className="bg-[#fbbf24] hover:bg-white text-black font-black text-xs uppercase tracking-widest py-4 px-6 text-center transition-colors border-2 border-black rounded-none whitespace-nowrap shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
           >
             Call Duty Riggers
           </a>

@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { Phone, Menu, X, Siren } from 'lucide-react';
 import { TabType } from '../types';
+import CraneLogo from './CraneLogo';
 
 interface HeaderProps {
   currentTab: TabType;
@@ -53,13 +54,18 @@ export default function Header({ currentTab, onSelectTab }: HeaderProps) {
         <button 
           id="btn-nav-logo"
           onClick={() => handleNavClick('home')}
-          className="flex flex-col text-left focus:outline-none group"
+          className="flex items-center gap-2 text-left focus:outline-none group select-none"
         >
-          <div className="bg-[#fbbf24] text-black px-4 py-2 border-2 border-black font-black uppercase tracking-tighter text-xl md:text-2xl italic leading-none transition-transform duration-200 group-hover:scale-102 select-none shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
-            SOLOO TRUCKS<br />
-            <span className="text-zinc-900 font-extrabold font-sans">RECOVERY</span>
+          <div className="bg-black/40 border-2 border-[#fbbf24] p-1.5 transition-colors group-hover:bg-[#fbbf24]/10">
+            <CraneLogo className="w-9 h-9 md:w-11 md:h-11 text-[#fbbf24] group-hover:scale-110 transition-transform duration-200" />
           </div>
-          <span className="text-[8px] uppercase tracking-[0.2em] text-[#fbbf24] font-black mt-1">East Africa Standby Fleet</span>
+          <div className="flex flex-col">
+            <div className="bg-[#fbbf24] text-black px-3 py-1.5 border border-black font-black uppercase tracking-tighter text-sm md:text-md italic leading-none transition-transform duration-150 group-hover:bg-white select-none shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]">
+              SOLOO TRUCKS<br />
+              <span className="text-zinc-900 font-black font-sans text-[10px] tracking-widest block mt-0.5">RECOVERY</span>
+            </div>
+            <span className="text-[7.5px] uppercase tracking-[0.18em] text-[#fbbf24] font-black mt-0.5">East Africa Standby Fleet</span>
+          </div>
         </button>
 
         {/* Desktop Navigation Links */}

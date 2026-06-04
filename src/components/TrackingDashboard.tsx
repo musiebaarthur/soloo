@@ -535,25 +535,17 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   </div>
                 </div>
 
-                <div className="space-y-2.5 text-xs border-t border-white/10 pt-4 uppercase tracking-wider font-mono text-gray-400">
-                  <div className="flex justify-between border-b border-white/5 pb-1">
-                    <span>Base dispatch rate</span>
-                    <span className="text-white font-bold">KES {(basePrices[serviceId] || 5000).toLocaleString()}</span>
-                  </div>
-                  <div className="flex justify-between border-b border-white/5 pb-1">
-                    <span>Distance charge</span>
-                    <span className="text-white font-bold">KES {(getEstimatedDistance() * (perKmPrices[serviceId] || 150)).toLocaleString()}</span>
-                  </div>
+                <div className="space-y-2.5 text-xs border-t border-white/10 pt-4 uppercase tracking-wider font-mono text-[#fbbf24]">
                   <div className="flex justify-between text-emerald-400 text-[10px]">
-                    <span>Cargo Cargo Protection</span>
+                    <span>Cargo Protection</span>
                     <span>Fully Covered</span>
                   </div>
 
-                  <div className="flex justify-between items-baseline pt-4 text-normal-case text-white leading-none">
-                    <span className="font-black text-white text-xs uppercase tracking-widest font-sans">Total Booking Cost</span>
+                  <div className="flex justify-between items-baseline pt-4 text-normal-case text-white leading-none border-t border-white/5">
+                    <span className="font-black text-white text-xs uppercase tracking-widest font-sans font-semibold">Booking Status</span>
                     <div className="text-right">
-                      <span className="text-2xl font-black text-[#fbbf24] tracking-tight">KES {calculateCost().toLocaleString()}</span>
-                      <span className="text-[9px] text-gray-500 block mt-1 uppercase tracking-wider font-sans">Inc. Road Fuel Levies</span>
+                      <span className="text-xs font-black text-emerald-400 tracking-tight uppercase">Complimentary Rate Processed</span>
+                      <span className="text-[8px] text-zinc-400 block mt-1 uppercase tracking-wider font-sans">No immediate deposit requested</span>
                     </div>
                   </div>
                 </div>
@@ -600,8 +592,8 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
               <h2 className="text-lg font-black uppercase tracking-tight text-white mt-1">Towing Ticket {activeBooking.id}</h2>
             </div>
             <div className="text-right">
-              <span className="text-[9px] text-gray-500 block font-bold uppercase tracking-wider">Estimated Fee</span>
-              <span className="text-xl font-black text-[#fbbf24] leading-none font-mono">KES {activeBooking.estimatedCost.toLocaleString()}</span>
+              <span className="text-[9px] text-emerald-400 block font-bold uppercase tracking-wider">Gate Status</span>
+              <span className="text-xs font-black text-emerald-400 leading-none">Ready to Route</span>
             </div>
           </div>
 
@@ -638,7 +630,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                       </div>
                       <p className="text-[11px] text-center text-zinc-200 leading-relaxed font-semibold font-mono">
                         [M-PESA SIMULATOR POPUP] <br />
-                        Pay KES <strong className="text-white font-bold">{activeBooking.estimatedCost.toLocaleString()}</strong> to <strong className="text-white">SOLOO TRUCKS RECOVERY LTD</strong>. <br />
+                        Authorize Soloo Trucks Recovery dispatch request to <strong className="text-white">SOLOO TRUCKS RECOVERY LTD</strong>. <br />
                         Enter private 4-digit M-Pesa PIN:
                       </p>
                       <input
@@ -750,7 +742,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="bg-[#fbbf24]/5 border border-[#fbbf24]/35 p-4 space-y-2">
                   <p className="text-xs text-[#fbbf24] font-black uppercase tracking-wider">Cash Payment Option Confirmed</p>
                   <p className="text-xs text-gray-400 leading-relaxed">
-                    No immediate online transaction simulation is required. You will hand over KES {activeBooking.estimatedCost.toLocaleString()} directly to our active recovery vehicle operator James Koech upon vehicle dropoff verification at the terminal.
+                    No immediate online transaction simulation is required. You will settle payment directly with our active recovery vehicle operator James Koech upon vehicle dropoff verification at the terminal.
                   </p>
                 </div>
                 

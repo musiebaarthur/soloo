@@ -39,10 +39,10 @@ export default function ContactTab() {
   const officesPool = [
     {
       title: 'Central Command & Dispatch HQs',
-      address: 'Soloo Tower yard, Mombasa Road (Adj. City Cabanas), Nairobi, Kenya',
+      address: 'Soloo Command Office, Kondele, Kisumu, Kenya (Serving all of East Africa: Kenya, Uganda, Tanzania)',
       hours: '24 Hours / 7 Days / 365 Days',
       phones: ['0722154729', '0735154729'],
-      scope: 'Heavy crane mobilization, warehouse loading forklifts, flatbeds, and nationwide logistics routing.'
+      scope: 'Heavy crane mobilization, warehouse loading forklifts, flatbeds, and East African border logistics routing.'
     },
     {
       title: 'Waiyaki Way Patrol Standby Node',
@@ -67,15 +67,15 @@ export default function ContactTab() {
       <div className="text-left pb-6">
         <div className="inline-block bg-[#fbbf24] text-black px-6 py-5 border-4 border-black select-none max-w-4xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-4">
           <span className="text-[10px] font-black uppercase tracking-[0.25em] block mb-1">
-            24/7 COMMAND DESK ACTIVE
+            24/7 ACTIVE DESK
           </span>
           <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none m-0">
             Immediate Towing &amp; <br />
-            Recovery Support Services
+            Recovery Support
           </h1>
         </div>
-        <p className="text-[#f4f4f5] text-xs md:text-sm mt-3 max-w-2xl leading-relaxed font-semibold">
-          Need a heavy-duty crane quote, commercial machinery forklift contract, or standard highway rescue across Kenya, Uganda, or Tanzania? Connect instantly to our active regional command center.
+        <p className="text-[#f4f4f5] text-xs md:text-sm mt-3 max-w-xl leading-relaxed font-semibold">
+          Get crane quotes, forklift contracts, or standby highway rescue across Kenya, Uganda, and Tanzania. Contact our duty controller directly or book online.
         </p>
       </div>
 
@@ -254,7 +254,7 @@ export default function ContactTab() {
             <button
               id="btn-inq-submit"
               type="submit"
-              className="w-full bg-[#fbbf24] hover:bg-white text-black font-black py-4 text-xs uppercase tracking-widest transition-colors rounded-none flex items-center justify-center gap-2"
+              className="w-full bg-[#fbbf24] hover:bg-white text-black font-black py-4 text-xs uppercase tracking-widest transition-colors border-2 border-black rounded-none flex items-center justify-center gap-2 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
             >
               Submit Inquiry Ticket <Send className="w-4 h-4 text-black" />
             </button>
