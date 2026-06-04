@@ -18,6 +18,7 @@ export default function Header({ currentTab, onSelectTab }: HeaderProps) {
   const navItems: { id: TabType; label: string }[] = [
     { id: 'home', label: 'Home' },
     { id: 'services', label: 'Services' },
+    { id: 'gallery', label: 'Gallery' },
     { id: 'track-book', label: 'Tracking & Book' },
     { id: 'contact', label: 'Contact' }
   ];
@@ -54,8 +55,8 @@ export default function Header({ currentTab, onSelectTab }: HeaderProps) {
           onClick={() => handleNavClick('home')}
           className="flex flex-col text-left focus:outline-none group"
         >
-          <h1 className="text-3xl md:text-4xl font-black italic leading-none tracking-tighter text-[#fbbf24] transition-transform duration-200 group-hover:scale-102">
-            SOLOO<br />
+          <h1 className="text-2xl md:text-3xl font-black italic leading-none tracking-tighter text-[#fbbf24] transition-transform duration-200 group-hover:scale-102">
+            SOLOO TRUCKS<br />
             <span className="text-white">RECOVERY</span>
           </h1>
           <span className="text-[9px] uppercase tracking-[0.25em] text-[#fbbf24]/50 font-bold mt-1">Nairobi Standby Fleet</span>

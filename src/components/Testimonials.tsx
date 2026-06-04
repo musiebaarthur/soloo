@@ -130,7 +130,7 @@ export default function Testimonials() {
             Trusted by Kenyan Motorists <br />
             <span className="text-[#fbbf24]">&amp; Logistics Firms</span>
           </h2>
-          <p className="text-gray-400 text-xs md:text-sm max-w-2xl leading-relaxed">
+          <p className="text-[#f4f4f5] text-xs md:text-sm max-w-2xl leading-relaxed font-semibold">
             Read authentic breakdown experiences from our corporate warehousing logicians, stranded cross-regional motorists, and active heavy-haul operations directors.
           </p>
         </div>
@@ -161,8 +161,8 @@ export default function Testimonials() {
           className="max-w-2xl mx-auto bg-white/5 border border-white/10 p-6 md:p-8 rounded-none space-y-5 text-left"
         >
           <div className="border-b border-white/10 pb-2">
-            <h3 className="text-sm font-black text-[#fbbf24] uppercase tracking-widest">Share Your Soloo Experience</h3>
-            <p className="text-[10px] text-gray-500 mt-1">Your feedback helps us refine response and rigging parameters.</p>
+            <h3 className="text-sm font-black text-[#fbbf24] uppercase tracking-widest">Share Your Soloo Trucks Recovery Experience</h3>
+            <p className="text-[10px] text-zinc-300 mt-1 font-semibold">Your feedback helps us refine response and rigging parameters.</p>
           </div>
 
           {errorMsg && (
@@ -292,7 +292,7 @@ export default function Testimonials() {
               </div>
 
               {/* Message text description */}
-              <p className="text-gray-350 text-xs md:text-sm leading-relaxed italic">
+              <p className="text-[#f4f4f5] text-xs md:text-sm leading-relaxed italic font-medium">
                 &ldquo;{rev.message}&rdquo;
               </p>
             </div>
@@ -302,10 +302,10 @@ export default function Testimonials() {
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <h4 className="font-extrabold text-[#fbbf24] text-xs sm:text-sm tracking-tight">{rev.name}</h4>
-                  <p className="text-[10px] text-gray-400 leading-tight mt-0.5">{rev.role}</p>
+                  <p className="text-[10px] text-zinc-300 leading-tight mt-0.5 font-semibold">{rev.role}</p>
                 </div>
                 {rev.isVerified && (
-                  <div className="flex items-center gap-0.5 border border-emerald-500/30 bg-emerald-500/10 px-1 py-0.5 shrink-0" title="Verified Soloo Client">
+                  <div className="flex items-center gap-0.5 border border-emerald-500/30 bg-emerald-500/10 px-1 py-0.5 shrink-0" title="Verified Soloo Trucks Recovery Client">
                     <BadgeCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                     <span className="text-[8px] text-emerald-400 font-black tracking-widest uppercase">Verified</span>
                   </div>
@@ -313,7 +313,7 @@ export default function Testimonials() {
               </div>
 
               {/* Tag information detailing service and date */}
-              <div className="flex items-center justify-between gap-2 text-[9px] text-gray-500 font-black uppercase">
+              <div className="flex items-center justify-between gap-2 text-[9px] text-[#cbd5e1] font-black uppercase">
                 <span className="p-1 px-1.5 bg-black/30 border border-white/5 line-clamp-1 max-w-[70%] tracking-wider">{rev.serviceType}</span>
                 <span className="shrink-0 tracking-tight font-mono">{rev.date}</span>
               </div>

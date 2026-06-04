@@ -161,7 +161,7 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
           Comprehensive Heavy <br />
           <span className="text-[#fbbf24]">Recovery &amp; Dispatches</span>
         </h1>
-        <p className="text-gray-400 text-xs md:text-sm max-w-2xl leading-relaxed">
+        <p className="text-[#f4f4f5] text-xs md:text-sm max-w-2xl leading-relaxed font-semibold">
           From compact motorbikes to 40-ton prime movers and industrial warehouse cargo, Soloo Recovery maintains heavy-lifting crane systems, versatile forklift fleets, and rapid-response flatbeds.
         </p>
       </div>
@@ -215,7 +215,7 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
             <AlertTriangle className="w-5 h-5 text-[#fbbf24] shrink-0 mt-0.5" />
             <div className="text-[11px] space-y-1">
               <h4 className="font-black uppercase text-[#fbbf24] tracking-wider">Nationwide Strategic Coverage</h4>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-[#cbd5e1] font-semibold leading-relaxed">
                 If stranded outside Nairobi limits, our highway-standby network will be routed to your coordinates. High-grade industrial contracts are fully insured up to KES 20,000,000 load liability.
               </p>
             </div>
@@ -236,14 +236,14 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
                         {current.category}
                       </span>
                       <h3 className="text-2xl font-black text-white uppercase tracking-tight mt-1">{current.title}</h3>
-                      <p className="text-xs text-gray-400 font-medium italic">{current.tagline}</p>
+                      <p className="text-xs text-zinc-300 font-extrabold italic">{current.tagline}</p>
                     </div>
                     
                     {/* Pricing Overview Tag */}
                     <div className="bg-[#151515] px-4 py-3 rounded-none border border-white/10 shrink-0 select-none">
-                      <span className="text-[9px] uppercase text-gray-400 block font-black tracking-wider leading-none mb-1">Base Dispatch Rate</span>
+                      <span className="text-[9px] uppercase text-zinc-300 block font-black tracking-wider leading-none mb-1">Base Dispatch Rate</span>
                       <span className="text-lg font-black text-[#fbbf24] tracking-tight">KES {current.basePrice.toLocaleString()}</span>
-                      <span className="text-[9px] text-gray-500 block font-bold mt-0.5 tracking-wider">+ KES {current.perKmPrice}/KM</span>
+                      <span className="text-[9px] text-[#cbd5e1] block font-extrabold mt-0.5 tracking-wider">+ KES {current.perKmPrice}/KM</span>
                     </div>
                   </div>
 
@@ -303,7 +303,7 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
                 <div className="bg-white/5 border border-white/10 p-5 mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="text-xs space-y-1">
                     <p className="font-extrabold text-[#fbbf24] uppercase tracking-wider">Need this exact service dispatched?</p>
-                    <p className="text-gray-400">Our live dispatchers link up with driver personnel inside 3 minutes.</p>
+                    <p className="text-zinc-200 font-semibold">Our live dispatchers link up with driver personnel inside 3 minutes.</p>
                   </div>
                   
                   <button
@@ -466,7 +466,7 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
           <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mt-1">
             Frequently Asked <span className="text-[#fbbf24]">Queries</span>
           </h2>
-          <p className="text-gray-400 text-xs md:text-sm max-w-2xl mt-1.5 leading-relaxed">
+          <p className="text-[#f4f4f5] text-xs md:text-sm max-w-2xl mt-1.5 leading-relaxed font-semibold">
             Quick, reliable answers regarding Soloo Recovery's commercial rates, response times, safety guarantees, and regional fleet dispatch boundaries.
           </p>
         </div>
@@ -481,13 +481,13 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
               <div className="space-y-4 text-xs">
                 <div className="space-y-1">
                   <h4 className="font-extrabold text-white text-xs uppercase">No Hidden Surcharges</h4>
-                  <p className="text-gray-400 leading-relaxed font-normal">
+                  <p className="text-zinc-200 leading-relaxed font-semibold">
                     Our dynamic cost estimator matches solver terminals exactly. Fuel levy fluctuations, carrier tolls, and vehicle strap-downs are fully wrapped into your pre-dispatched estimate quote.
                   </p>
                 </div>
                 <div className="space-y-1">
                   <h4 className="font-extrabold text-white text-xs uppercase">Direct Coordinate Tracking</h4>
-                  <p className="text-gray-400 leading-relaxed font-normal">
+                  <p className="text-zinc-200 leading-relaxed font-semibold">
                     Once the Safaricom M-Pesa STK or card authorization matches, your phone number ties into our standby driver's terminal, generating accurate telemetry routes.
                   </p>
                 </div>
@@ -497,7 +497,7 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
             <div className="bg-white/5 border border-white/10 p-5 flex items-center justify-between gap-4">
               <div className="text-xs">
                 <p className="font-extrabold text-white uppercase tracking-wider">Still confused?</p>
-                <p className="text-gray-400 mt-0.5 font-normal">Connect to a live rigger instantly via chat or emergency telephone.</p>
+                <p className="text-zinc-200 mt-0.5 font-semibold">Connect to a live rigger instantly via chat or emergency telephone.</p>
               </div>
               <button
                 onClick={() => onSelectTab('contact')}
@@ -577,7 +577,7 @@ export default function ServicesTab({ onSelectTab, onPreselectService }: Service
                       isOpen ? 'max-h-60 border-t border-white/10' : 'max-h-0'
                     }`}
                   >
-                    <div className="p-5 text-xs text-gray-400 font-normal leading-relaxed bg-black/20">
+                    <div className="p-5 text-xs text-[#ebd5e1] font-extrabold leading-relaxed bg-black/20 text-zinc-100">
                       {faq.answer}
                     </div>
                   </div>

@@ -68,11 +68,11 @@ export default function ContactTab() {
         <span className="text-[10px] font-black text-[#fbbf24] uppercase tracking-[0.25em] block">
           24/7 COMMAND DESK ACTIVE
         </span>
-        <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-white mt-2">
+        <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-white mt-2 leading-none">
           Immediate Towing &amp; <br />
           <span className="text-[#fbbf24]">Recovery Support Services</span>
         </h1>
-        <p className="text-gray-400 text-xs md:text-sm mt-3 max-w-2xl leading-relaxed">
+        <p className="text-[#f4f4f5] text-xs md:text-sm mt-3 max-w-2xl leading-relaxed font-semibold">
           Need a heavy-duty crane quote, commercial machinery forklift contract, or standard highway rescue? Connect instantly to our active command center.
         </p>
       </div>
@@ -132,9 +132,9 @@ export default function ContactTab() {
 
           {/* Quick Stats overview cards */}
           <div className="bg-black/30 border border-white/5 p-5 mt-6 space-y-4 text-left">
-            <h4 className="text-[9px] font-black text-gray-500 uppercase tracking-widest">Standby Response Metrics</h4>
+            <h4 className="text-[9px] font-black text-zinc-400 uppercase tracking-widest">Standby Response Metrics</h4>
             
-            <div className="space-y-3 text-xs leading-relaxed text-gray-400">
+            <div className="space-y-3 text-xs leading-relaxed text-[#e4e4e7] font-semibold">
               <div className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 text-[#fbbf24] shrink-0 mt-0.5" />
                 <p><strong>24/7/365 On Watch</strong>: Shift crew, heavy riggers, and crane planners operate rotating shifts for continuous security.</p>
@@ -160,7 +160,7 @@ export default function ContactTab() {
             <h2 className="text-xl md:text-3xl font-black uppercase tracking-tight text-white mt-1 flex items-center gap-2">
               <FileText className="w-5 h-5 text-[#fbbf24] shrink-0" /> Web Inquiry ticketing
             </h2>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-[#cbd5e1] font-semibold leading-relaxed">
               Have a future logistics contract, forklift hire inquiry, or general feedback? Send us a message and our corporate operations office will respond within 4 hours.
             </p>
           </div>
@@ -279,8 +279,8 @@ export default function ContactTab() {
                 </span>
 
                 <h4 className="font-black text-white text-base leading-tight uppercase tracking-tight">{office.title}</h4>
-                <p className="text-xs text-gray-400">{office.address}</p>
-                <p className="text-[11px] text-gray-500 leading-relaxed italic border-t border-white/5 pt-3">
+                <p className="text-xs text-[#cbd5e1] font-bold">{office.address}</p>
+                <p className="text-[11px] text-zinc-350 font-bold leading-relaxed italic border-t border-white/5 pt-3">
                   Scope: {office.scope}
                 </p>
               </div>

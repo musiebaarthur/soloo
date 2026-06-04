@@ -13,6 +13,7 @@ import TrackingDashboard from './components/TrackingDashboard';
 import ContactTab from './components/ContactTab';
 import Testimonials from './components/Testimonials';
 import LiveChat from './components/LiveChat';
+import GalleryTab from './components/GalleryTab';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<TabType>('home');
@@ -63,6 +64,12 @@ export default function App() {
         {currentTab === 'contact' && (
           <div className="animate-fade-in py-4">
             <ContactTab />
+          </div>
+        )}
+
+        {currentTab === 'gallery' && (
+          <div className="animate-fade-in py-4">
+            <GalleryTab />
           </div>
         )}
       </main>

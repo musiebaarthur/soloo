@@ -634,9 +634,9 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                         <span className="text-[9px] text-emerald-400 font-extrabold tracking-widest uppercase font-mono">Simulated Smartphone Screen</span>
                         <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
                       </div>
-                      <p className="text-[11px] text-center text-gray-300 leading-relaxed font-mono">
+                      <p className="text-[11px] text-center text-zinc-200 leading-relaxed font-semibold font-mono">
                         [M-PESA SIMULATOR POPUP] <br />
-                        Pay KES <strong className="text-white font-bold">{activeBooking.estimatedCost.toLocaleString()}</strong> to <strong className="text-white">SOLOO RECOVERY LTD</strong>. <br />
+                        Pay KES <strong className="text-white font-bold">{activeBooking.estimatedCost.toLocaleString()}</strong> to <strong className="text-white">SOLOO TRUCKS RECOVERY LTD</strong>. <br />
                         Enter private 4-digit M-Pesa PIN:
                       </p>
                       <input
