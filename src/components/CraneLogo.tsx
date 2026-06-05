@@ -10,7 +10,7 @@ interface CraneLogoProps {
   color?: string;
 }
 
-export default function CraneLogo({ className = "w-10 h-10", color = "text-[#fbbf24]" }: CraneLogoProps) {
+export default function CraneLogo({ className = "w-10 h-10", color = "text-[#f97316]" }: CraneLogoProps) {
   return (
     <svg 
       viewBox="0 0 64 64" 

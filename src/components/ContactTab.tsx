@@ -36,45 +36,18 @@ export default function ContactTab() {
     }, 5000);
   };
 
-  const officesPool = [
-    {
-      title: 'Central Command & Dispatch HQs',
-      address: 'Soloo Command Office, Kondele, Kisumu, Kenya (Serving all of East Africa: Kenya, Uganda, Tanzania)',
-      hours: '24 Hours / 7 Days / 365 Days',
-      phones: ['0722154729', '0735154729'],
-      scope: 'Heavy crane mobilization, warehouse loading forklifts, flatbeds, and East African border logistics routing.'
-    },
-    {
-      title: 'Waiyaki Way Patrol Standby Node',
-      address: 'Standby Wrecker Station (Near Regen/Kangemi Flyover Interchange), Nairobi',
-      hours: '24 Hours Standby Patrol',
-      phones: ['0722154729'],
-      scope: 'Express recovery flatbeds for standard cars, SUVs, and immediate battery boost / flat tire tire swaps.'
-    },
-    {
-      title: 'Thika Highway Regional Terminal',
-      address: 'Standby Yard (Near Clay Works Roundabout), Thika Superhighway',
-      hours: '24 Hours Standby Patrol',
-      phones: ['0735154729'],
-      scope: 'Medium wheel-lifts, container forklifts, and heavy bus towing on North-Eastern bypass loops.'
-    }
-  ];
-
   return (
     <div id="contact-tab-wrapper" className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-12 space-y-16 bg-[#1a1a1a]">
       
       {/* Intro Header */}
-      <div className="text-left pb-6">
-        <div className="inline-block bg-[#fbbf24] text-black px-6 py-5 border-4 border-black select-none max-w-4xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-4">
-          <span className="text-[10px] font-black uppercase tracking-[0.25em] block mb-1">
-            24/7 ACTIVE DESK
-          </span>
-          <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none m-0">
-            Immediate Towing &amp; <br />
-            Recovery Support
-          </h1>
-        </div>
-        <p className="text-[#f4f4f5] text-xs md:text-sm mt-3 max-w-xl leading-relaxed font-semibold">
+      <div className="text-left pb-6 select-none">
+        <span className="text-[10px] font-black text-[#f97316] uppercase tracking-[0.25em] block mb-2">
+          24/7 ACTIVE DESK
+        </span>
+        <h1 className="text-4xl md:text-5xl font-black text-[#f97316] uppercase tracking-tighter leading-none m-0">
+          Immediate Towing &amp; Recovery Support
+        </h1>
+        <p className="text-zinc-100 text-xs md:text-sm mt-4 max-w-xl leading-relaxed font-bold">
           Get crane quotes, forklift contracts, or standby highway rescue across Kenya, Uganda, and Tanzania. Contact our duty controller directly or book online.
         </p>
       </div>
@@ -89,10 +62,10 @@ export default function ContactTab() {
             </h2>
 
             {/* Primary Quick Emergency Hotlines Card */}
-            <div className="bg-[#fbbf24] p-6 text-black relative overflow-hidden rounded-none border border-black/15">
+            <div className="bg-[#f97316] p-6 text-black relative overflow-hidden rounded-none border border-black/15">
               <div className="space-y-4 relative z-10 text-left">
                 <div className="flex items-center gap-2.5">
-                  <span className="bg-black text-[#fbbf24] font-black text-[9px] uppercase px-3 py-1 animate-pulse tracking-widest font-mono">
+                  <span className="bg-black text-[#f97316] font-black text-[9px] uppercase px-3 py-1 animate-pulse tracking-widest font-mono">
                     ● 24 HR DISPATCH RADAR
                   </span>
                 </div>
@@ -107,10 +80,10 @@ export default function ContactTab() {
                     className="bg-black text-white hover:bg-neutral-900 font-black text-lg py-4 px-4 flex items-center justify-between transition-colors rounded-none border border-transparent"
                   >
                     <div className="flex items-center gap-3">
-                      <Phone className="w-5 h-5 text-[#fbbf24] shrink-0" />
+                      <Phone className="w-5 h-5 text-[#f97316] shrink-0" />
                       <span className="font-mono">0722 154 729</span>
                     </div>
-                    <span className="text-[10px] text-[#fbbf24] font-black border border-[#fbbf24]/30 py-0.5 px-2 tracking-wider font-mono">Safaricom</span>
+                    <span className="text-[10px] text-[#f97316] font-black border border-[#f97316]/30 py-0.5 px-2 tracking-wider font-mono">Safaricom</span>
                   </a>
 
                   <a
@@ -118,15 +91,15 @@ export default function ContactTab() {
                     className="bg-black text-white hover:bg-neutral-900 font-black text-lg py-4 px-4 flex items-center justify-between transition-colors rounded-none border border-transparent"
                   >
                     <div className="flex items-center gap-3">
-                      <Phone className="w-5 h-5 text-[#fbbf24] shrink-0" />
+                      <Phone className="w-5 h-5 text-[#f97316] shrink-0" />
                       <span className="font-mono">0735 154 729</span>
                     </div>
-                    <span className="text-[10px] text-[#fbbf24] font-black border border-[#fbbf24]/30 py-0.5 px-2 tracking-wider font-mono">Airtel</span>
+                    <span className="text-[10px] text-[#f97316] font-black border border-[#f97316]/30 py-0.5 px-2 tracking-wider font-mono">Airtel</span>
                   </a>
                 </div>
 
                 <p className="text-[10px] text-black/80 leading-normal font-bold italic pt-1">
-                  *Standard call rates apply. Dispatch dispatcher James Koech or controller Sarah will instantly capture your precise highway breakdown coordinates.
+                  *Standard call rates apply. Our on-duty dispatch specialists will instantly capture your precise highway breakdown coordinates.
                 </p>
               </div>
             </div>
@@ -138,17 +111,17 @@ export default function ContactTab() {
             
             <div className="space-y-3 text-xs leading-relaxed text-[#e4e4e7] font-semibold">
               <div className="flex items-start gap-2.5">
-                <Clock className="w-4 h-4 text-[#fbbf24] shrink-0 mt-0.5" />
+                <Clock className="w-4 h-4 text-[#f97316] shrink-0 mt-0.5" />
                 <p><strong>24/7/365 On Watch</strong>: Shift crew, heavy riggers, and crane planners operate rotating shifts for continuous security.</p>
               </div>
 
               <div className="flex items-start gap-2.5">
-                <Compass className="w-4 h-4 text-[#fbbf24] shrink-0 mt-0.5" />
+                <Compass className="w-4 h-4 text-[#f97316] shrink-0 mt-0.5" />
                 <p><strong>Sub-25 Min Response</strong>: Multi-point bypass patrol fleets ensure rapid mobilization in all Greater Nairobi sectors.</p>
               </div>
 
               <div className="flex items-start gap-2.5">
-                <HardHat className="w-4 h-4 text-[#fbbf24] shrink-0 mt-0.5" />
+                <HardHat className="w-4 h-4 text-[#f97316] shrink-0 mt-0.5" />
                 <p><strong>Standard Liability Guarantee</strong>: All recovery lifts, forklift leasing, and cargo movements are fully insured.</p>
               </div>
             </div>
@@ -158,9 +131,9 @@ export default function ContactTab() {
         {/* Messaging Support Form (7 cols) */}
         <div id="contact-messaging-panel" className="lg:col-span-7 bg-[#101010] p-6 md:p-8 space-y-6 text-left">
           <div className="border-b border-white/10 pb-4">
-            <span className="text-[9px] text-[#fbbf24] font-black uppercase tracking-widest block">Online Request Service</span>
+            <span className="text-[9px] text-[#f97316] font-black uppercase tracking-widest block">Online Request Service</span>
             <h2 className="text-xl md:text-3xl font-black uppercase tracking-tight text-white mt-1 flex items-center gap-2">
-              <FileText className="w-5 h-5 text-[#fbbf24] shrink-0" /> Web Inquiry ticketing
+              <FileText className="w-5 h-5 text-[#f97316] shrink-0" /> Web Inquiry ticketing
             </h2>
             <p className="text-xs text-[#cbd5e1] font-semibold leading-relaxed">
               Have a future logistics contract, forklift hire inquiry, or general feedback? Send us a message and our corporate operations office will respond within 4 hours.
@@ -188,10 +161,10 @@ export default function ContactTab() {
                   id="inq-name"
                   type="text"
                   required
-                  placeholder="e.g. Arthur Musieba"
+                  placeholder="e.g. John Doe"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316]"
                 />
               </div>
 
@@ -201,10 +174,10 @@ export default function ContactTab() {
                   id="inq-email"
                   type="email"
                   required
-                  placeholder="e.g. arthur@example.com"
+                  placeholder="e.g. john.doe@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316]"
                 />
               </div>
             </div>
@@ -218,7 +191,7 @@ export default function ContactTab() {
                   placeholder="e.g. 0722154729"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316]"
                 />
               </div>
 
@@ -228,7 +201,7 @@ export default function ContactTab() {
                   id="inq-category"
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] [&>option]:bg-[#1a1a1a]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] [&>option]:bg-[#1a1a1a]"
                 >
                   <option value="Inquiry">General Recovery Inquiry</option>
                   <option value="CraneContract">Heavy Crane Lease Contract</option>
@@ -247,60 +220,18 @@ export default function ContactTab() {
                 placeholder="Details of vehicle specifications, lift requirements, site coordinates, or lease timing schedule..."
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24]"
+                className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316]"
               />
             </div>
 
             <button
               id="btn-inq-submit"
               type="submit"
-              className="w-full bg-[#fbbf24] hover:bg-white text-black font-black py-4 text-xs uppercase tracking-widest transition-colors border-2 border-black rounded-none flex items-center justify-center gap-2 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
+              className="w-full bg-[#f97316] hover:bg-white text-black font-black py-4 text-xs uppercase tracking-widest transition-colors border-2 border-black rounded-none flex items-center justify-center gap-2 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
             >
               Submit Inquiry Ticket <Send className="w-4 h-4 text-black" />
             </button>
           </form>
-        </div>
-      </div>
-
-      {/* Office Locations Standby Network segment details */}
-      <div id="standby-locations-grid" className="space-y-6 text-left">
-        <h3 className="text-xs font-black uppercase text-[#fbbf24] tracking-widest pb-3 border-b border-white/10 flex items-center gap-2">
-          <MapPin className="w-5 h-5 text-[#fbbf24]" /> Active Standby Depots &amp; Coverage Points
-        </h3>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {officesPool.map((office, idx) => (
-            <div
-              key={idx}
-              id={`office-${idx}`}
-              className="bg-[#151515] border border-white/10 p-6 rounded-none space-y-4 flex flex-col justify-between hover:border-[#fbbf24]/50 transition-colors"
-            >
-              <div className="space-y-3">
-                <span className="text-[9px] bg-[#fbbf24]/10 border border-[#fbbf24]/20 text-[#fbbf24] font-black uppercase px-2.5 py-1 tracking-wider block w-fit font-mono">
-                  {office.hours}
-                </span>
-
-                <h4 className="font-black text-white text-base leading-tight uppercase tracking-tight">{office.title}</h4>
-                <p className="text-xs text-[#cbd5e1] font-bold">{office.address}</p>
-                <p className="text-[11px] text-zinc-350 font-bold leading-relaxed italic border-t border-white/5 pt-3">
-                  Scope: {office.scope}
-                </p>
-              </div>
-
-              {/* Call office link */}
-              <div className="border-t border-white/5 pt-4 flex flex-wrap gap-2">
-                {office.phones.map((p, pIdx) => (
-                  <a
-                    key={pIdx}
-                    href={`tel:${p}`}
-                    className="flex-1 bg-[#1a1a1a] border border-white/10 hover:border-white text-white font-black text-[10px] uppercase tracking-wider py-2 text-center flex items-center justify-center gap-1.5 transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-[#fbbf24]" /> Call {p}
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </div>

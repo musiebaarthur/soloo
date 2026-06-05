@@ -13,7 +13,7 @@ export default function LiveChat() {
     {
       id: 'default-1',
       sender: 'dispatcher',
-      text: "Hello! Welcome to Soloo Towing & Recovery 24/7 Dispatch. I'm Sarah, your active dispatch manager. Do you need emergency vehicle recovery, a heavy-duty crane, or forklift assistance? Let me know, or select a quick option below!",
+      text: "Hello! Welcome to Soloo Towing & Recovery 24/7 Dispatch. I'm Jane Doe, your active dispatch manager. Do you need emergency vehicle recovery, a heavy-duty crane, or forklift assistance? Let me know, or select a quick option below!",
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
@@ -68,7 +68,7 @@ export default function LiveChat() {
       } else if (lowerText.someKeywords(['phone', 'contact', 'call', 'number', 'emergency'])) {
         responseText = "You can talk to a human operator instantly across both Networks! Hotlines: 0722154729 (Safaricom) or 0735154729 (Airtel). Let us rescue you!";
       } else {
-        responseText = "Understood. Our active dispatcher Sarah has received this query. For immediate truck routing, we highly recommend calling us at 0722154729 or using the 'Track & Book' engine so we can get your GPS coordinates!";
+        responseText = "Understood. Our active dispatcher Jane has received this query. For immediate truck routing, we highly recommend calling us at 0722154729 or using the 'Track & Book' engine so we can get your GPS coordinates!";
       }
 
       const dispatcherMsg: ChatMessage = {
@@ -93,7 +93,7 @@ export default function LiveChat() {
       <button
         id="btn-livechat-toggle"
         onClick={handleOpenToggle}
-        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#fbbf24] hover:bg-white text-black font-black shadow-2xl transition-all duration-300 focus:outline-none rounded-none border-2 border-black"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#f97316] hover:bg-white text-black font-black shadow-2xl transition-all duration-300 focus:outline-none rounded-none border-2 border-black"
         aria-label="Open 24/7 Live Chat Support"
         title="Open Live Chat"
       >
@@ -116,27 +116,27 @@ export default function LiveChat() {
       {isOpen && (
         <div
           id="livechat-window"
-          className="fixed bottom-24 right-6 z-50 w-[92vw] sm:w-[380px] h-[500px] bg-[#151515] border-2 border-[#fbbf24] shadow-2xl flex flex-col overflow-hidden transition-all duration-300 rounded-none text-left"
+          className="fixed bottom-24 right-6 z-50 w-[92vw] sm:w-[380px] h-[500px] bg-[#151515] border-2 border-[#f97316] shadow-2xl flex flex-col overflow-hidden transition-all duration-300 rounded-none text-left"
         >
           {/* Header */}
           <div className="bg-[#101010] px-4 py-3 border-b border-white/10 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="relative">
-                <div className="w-10 h-10 bg-[#fbbf24] text-black font-black text-xs flex items-center justify-center">
-                  ST
+                <div className="w-10 h-10 bg-[#f97316] text-black font-black text-xs flex items-center justify-center">
+                  JD
                 </div>
                 <span className="absolute bottom-0 right-0 block h-3 w-3 bg-emerald-500 ring-2 ring-[#101010]"></span>
               </div>
               <div className="text-left">
-                <h3 className="text-xs uppercase font-black text-white tracking-widest">Sarah • Dispatcher</h3>
-                <span className="text-[10px] text-[#fbbf24] font-bold uppercase tracking-wider font-mono">20m Response Standby</span>
+                <h3 className="text-xs uppercase font-black text-white tracking-widest">Jane Doe • Dispatcher</h3>
+                <span className="text-[10px] text-[#f97316] font-bold uppercase tracking-wider font-mono">20m Response Standby</span>
               </div>
             </div>
             
             <div className="flex items-center gap-2">
               <a 
                 href="tel:0722154729" 
-                className="p-1.5 hover:bg-white/5 text-[#fbbf24] transition-colors"
+                className="p-1.5 hover:bg-white/5 text-[#f97316] transition-colors"
                 aria-label="Call emergency 0722154729"
               >
                 <PhoneCall className="w-4 h-4" />
@@ -152,9 +152,9 @@ export default function LiveChat() {
           </div>
 
           {/* Sub Header Information Alert */}
-          <div className="bg-[#fbbf24]/5 px-4 py-2 border-b border-white/10 flex items-start gap-2 text-left">
-            <ShieldAlert className="w-4 h-4 text-[#fbbf24] shrink-0 mt-0.5" />
-            <p className="text-[10px] text-[#fbbf24]/90 font-bold uppercase tracking-wide leading-tight">
+          <div className="bg-[#f97316]/5 px-4 py-2 border-b border-white/10 flex items-start gap-2 text-left">
+            <ShieldAlert className="w-4 h-4 text-[#f97316] shrink-0 mt-0.5" />
+            <p className="text-[10px] text-[#f97316]/90 font-bold uppercase tracking-wide leading-tight">
               Direct emergency dispatch calls: <a href="tel:0722154729" className="font-black underline text-white">0722154729</a> or <a href="tel:0735154729" className="font-black underline text-white">0735154729</a>.
             </p>
           </div>
@@ -170,7 +170,7 @@ export default function LiveChat() {
                 >
                   <div className={`flex gap-2 max-w-[85%] ${isUser ? 'flex-row-reverse' : 'flex-row'}`}>
                     {!isUser && (
-                      <div className="w-6 h-6 bg-white/5 border border-white/10 text-[#fbbf24] text-[9px] font-black flex items-center justify-center shrink-0">
+                      <div className="w-6 h-6 bg-white/5 border border-white/10 text-[#f97316] text-[9px] font-black flex items-center justify-center shrink-0">
                         S
                       </div>
                     )}
@@ -178,7 +178,7 @@ export default function LiveChat() {
                       <div
                         className={`p-3 text-xs leading-relaxed rounded-none border ${
                           isUser
-                            ? 'bg-[#fbbf24] text-black border-[#fbbf24] font-extrabold'
+                            ? 'bg-[#f97316] text-black border-[#f97316] font-extrabold'
                             : 'bg-[#1a1a1a] border-white/10 text-gray-200'
                         }`}
                       >
@@ -196,13 +196,13 @@ export default function LiveChat() {
             {isTyping && (
               <div className="flex justify-start">
                 <div className="flex gap-2 max-w-[85%] items-center">
-                  <div className="w-6 h-6 bg-white/5 border border-white/10 text-[#fbbf24] text-[9px] font-black flex items-center justify-center shrink-0">
+                  <div className="w-6 h-6 bg-white/5 border border-white/10 text-[#f97316] text-[9px] font-black flex items-center justify-center shrink-0">
                     S
                   </div>
                   <div className="bg-[#1a1a1a] border border-white/10 p-3 rounded-none text-xs text-gray-400 flex items-center gap-1.5 font-mono">
-                    <span className="w-1.5 h-1.5 bg-[#fbbf24] animate-bounce"></span>
-                    <span className="w-1.5 h-1.5 bg-[#fbbf24] animate-bounce delay-100"></span>
-                    <span className="w-1.5 h-1.5 bg-[#fbbf24] animate-bounce delay-200"></span>
+                    <span className="w-1.5 h-1.5 bg-[#f97316] animate-bounce"></span>
+                    <span className="w-1.5 h-1.5 bg-[#f97316] animate-bounce delay-100"></span>
+                    <span className="w-1.5 h-1.5 bg-[#f97316] animate-bounce delay-200"></span>
                   </div>
                 </div>
               </div>
@@ -216,28 +216,28 @@ export default function LiveChat() {
               <button
                 id="preset-rates"
                 onClick={() => handlePresetSelect('Emergency Tow Rates')}
-                className="text-[9px] bg-[#1a1a1a] hover:bg-[#fbbf24] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
+                className="text-[9px] bg-[#1a1a1a] hover:bg-[#f97316] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
               >
                 💵 Towing Rates
               </button>
               <button
                 id="preset-forklift"
                 onClick={() => handlePresetSelect('Forklift Rental Details')}
-                className="text-[9px] bg-[#1a1a1a] hover:bg-[#fbbf24] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
+                className="text-[9px] bg-[#1a1a1a] hover:bg-[#f97316] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
               >
                 🏗️ Forklift Hire
               </button>
               <button
                 id="preset-heavy"
                 onClick={() => handlePresetSelect('Heavy Duty Cranes')}
-                className="text-[9px] bg-[#1a1a1a] hover:bg-[#fbbf24] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
+                className="text-[9px] bg-[#1a1a1a] hover:bg-[#f97316] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
               >
                 🚒 Heavy Cranes
               </button>
               <button
                 id="preset-location"
                 onClick={() => handlePresetSelect('Where is your driver based?')}
-                className="text-[9px] bg-[#1a1a1a] hover:bg-[#fbbf24] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
+                className="text-[9px] bg-[#1a1a1a] hover:bg-[#f97316] hover:text-black border border-white/10 px-2.5 py-1 text-gray-300 font-black uppercase tracking-wider rounded-none"
               >
                 📍 Patrol Map
               </button>
@@ -259,13 +259,13 @@ export default function LiveChat() {
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               placeholder="Type your emergency query..."
-              className="flex-1 bg-[#1a1a1a] text-white rounded-none px-3 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] placeholder-gray-600"
+              className="flex-1 bg-[#1a1a1a] text-white rounded-none px-3 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] placeholder-gray-600"
             />
             <button
               id="livechat-submit"
               type="submit"
               disabled={!inputText.trim()}
-              className="px-4 py-2.5 bg-[#fbbf24] disabled:bg-white/5 disabled:text-gray-600 text-black font-black transition-colors hover:bg-white flex items-center justify-center shrink-0 rounded-none"
+              className="px-4 py-2.5 bg-[#f97316] disabled:bg-white/5 disabled:text-gray-600 text-black font-black transition-colors hover:bg-white flex items-center justify-center shrink-0 rounded-none"
               aria-label="Send message"
             >
               <Send className="w-4 h-4 stroke-[2.5]" />

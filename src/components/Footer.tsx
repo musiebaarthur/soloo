@@ -31,11 +31,11 @@ export default function Footer({ onSelectTab }: FooterProps) {
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-2 text-left focus:outline-none group select-none"
           >
-            <div className="bg-black/40 border border-[#fbbf24] p-1">
-              <CraneLogo className="w-8 h-8 text-[#fbbf24]" />
+            <div className="bg-black/40 border border-[#f97316] p-1">
+              <CraneLogo className="w-8 h-8 text-[#f97316]" />
             </div>
             <div className="flex flex-col">
-              <div className="bg-[#fbbf24] text-black px-3 py-1 border border-black font-black uppercase tracking-tighter text-sm italic leading-none select-none">
+              <div className="bg-[#f97316] text-black px-3 py-1 border border-black font-black uppercase tracking-tighter text-sm italic leading-none select-none">
                 SOLOO TRUCKS<br />
                 <span className="text-zinc-900 font-extrabold font-sans text-[10px]">RECOVERY</span>
               </div>
@@ -48,11 +48,11 @@ export default function Footer({ onSelectTab }: FooterProps) {
 
           <div className="space-y-2 text-zinc-300 font-medium text-[11px] leading-normal pt-1">
             <p className="flex items-center gap-2">
-              <MapPin className="w-3.5 h-3.5 text-[#fbbf24] shrink-0" /> 
+              <MapPin className="w-3.5 h-3.5 text-[#f97316] shrink-0" /> 
               Kondele, Kisumu, Kenya
             </p>
             <p className="flex items-center gap-2">
-              <Mail className="w-3.5 h-3.5 text-[#fbbf24] shrink-0" /> 
+              <Mail className="w-3.5 h-3.5 text-[#f97316] shrink-0" /> 
               dispatch@soloorecovery.com
             </p>
           </div>
@@ -60,19 +60,20 @@ export default function Footer({ onSelectTab }: FooterProps) {
 
         {/* Quick Navigation column */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-[#fbbf24] uppercase tracking-[0.15em] border-b border-white/10 pb-2">Navigation</h4>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-white/10 pb-2">Navigation</h4>
           <div className="flex flex-col gap-2.5">
-            <button onClick={() => handleNavClick('home')} className="text-left text-zinc-300 hover:text-[#fbbf24] font-medium transition-colors">Home Page</button>
-            <button onClick={() => handleNavClick('services')} className="text-left text-zinc-300 hover:text-[#fbbf24] font-medium transition-colors">Our Services</button>
-            <button onClick={() => handleNavClick('gallery')} className="text-left text-zinc-300 hover:text-[#fbbf24] font-medium transition-colors">Fleet Gallery</button>
-            <button onClick={() => handleNavClick('track-book')} className="text-left text-zinc-300 hover:text-[#fbbf24] font-medium transition-colors">Track &amp; Book</button>
-            <button onClick={() => handleNavClick('contact')} className="text-left text-zinc-300 hover:text-[#fbbf24] font-medium transition-colors">Contact Support</button>
+            <button onClick={() => handleNavClick('home')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Home Page</button>
+            <button onClick={() => handleNavClick('services')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Our Services</button>
+            <button onClick={() => handleNavClick('gallery')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Fleet Gallery</button>
+            <button onClick={() => handleNavClick('blog')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Our Blog</button>
+            <button onClick={() => handleNavClick('track-book')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Track &amp; Book</button>
+            <button onClick={() => handleNavClick('contact')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Contact Support</button>
           </div>
         </div>
 
         {/* Active Support columns */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-[#fbbf24] uppercase tracking-[0.15em] border-b border-white/10 pb-2">Active Hotlines Line</h4>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-white/10 pb-2">Active Hotlines Line</h4>
           
           <div className="space-y-2">
             <a
@@ -80,10 +81,10 @@ export default function Footer({ onSelectTab }: FooterProps) {
               className="bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold py-2 px-3 rounded-none flex items-center justify-between transition-colors text-[11px]"
             >
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#fbbf24]" />
+                <Phone className="w-3.5 h-3.5 text-[#f97316]" />
                 <span>0722 154 729</span>
               </div>
-              <span className="text-[8px] text-[#fbbf24] font-black uppercase tracking-widest">Safaricom</span>
+              <span className="text-[8px] text-[#f97316] font-black uppercase tracking-widest">Safaricom</span>
             </a>
 
             <a
@@ -91,19 +92,19 @@ export default function Footer({ onSelectTab }: FooterProps) {
               className="bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold py-2 px-3 rounded-none flex items-center justify-between transition-colors text-[11px]"
             >
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#fbbf24]" />
+                <Phone className="w-3.5 h-3.5 text-[#f97316]" />
                 <span>0735 154 729</span>
               </div>
-              <span className="text-[8px] text-[#fbbf24] font-black uppercase tracking-widest">Airtel</span>
+              <span className="text-[8px] text-[#f97316] font-black uppercase tracking-widest">Airtel</span>
             </a>
           </div>
         </div>
 
         {/* Action Coverage Status */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-[#fbbf24] uppercase tracking-[0.15em] border-b border-white/10 pb-2">HQ Dispatch</h4>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-white/10 pb-2">HQ Dispatch</h4>
           <div className="border border-white/10 bg-white/5 p-3 rounded-none flex items-start gap-2 text-[10px] leading-tight text-zinc-300 font-semibold">
-            <Siren className="w-3.5 h-3.5 text-[#fbbf24] shrink-0 mt-0.5" />
+            <Siren className="w-3.5 h-3.5 text-[#f97316] shrink-0 mt-0.5" />
             <span>We maintain standby heavy operators stationed across Kenya, Uganda, and Tanzania. Contact our duty controller anytime.</span>
           </div>
         </div>
@@ -120,7 +121,7 @@ export default function Footer({ onSelectTab }: FooterProps) {
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1.5">
-            <div className="w-1.5 h-1.5 bg-[#fbbf24] rounded-full animate-pulse"></div>
+            <div className="w-1.5 h-1.5 bg-[#f97316] rounded-full animate-pulse"></div>
             <span className="font-bold uppercase tracking-wider text-zinc-300">East African Corridor Coverage</span>
           </div>
         </div>

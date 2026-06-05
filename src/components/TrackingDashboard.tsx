@@ -53,7 +53,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
     bookingId: 'MOCK-DEMO-991',
     status: 'RECEIVED',
     statusText: 'Booking accepted & queued for immediate dispatch.',
-    driverName: 'James Koech',
+    driverName: 'John Doe',
     driverPhone: '0722154729',
     driverVehicle: 'Scania Heavy Underlift 380HP',
     driverPlate: 'KCD 412X',
@@ -303,7 +303,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
           {/* Dispatch Form Inputs (7 cols) */}
           <form id="dispatch-form" onSubmit={handleFormSubmit} className="lg:col-span-7 bg-[#151515] p-6 md:p-8 space-y-6 text-left">
             <div className="pb-4">
-              <div className="inline-block bg-[#fbbf24] text-black px-4 py-3 border-2 border-black max-w-xl select-none mb-3 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+              <div className="inline-block bg-[#f97316] text-black px-4 py-3 border-2 border-black max-w-xl select-none mb-3 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
                 <span className="text-[9px] font-black tracking-widest uppercase block mb-0.5">Step 1 — Mobilize Logistics Crew</span>
                 <h1 className="text-2xl md:text-3xl font-black uppercase tracking-tighter m-0 flex items-center gap-2">
                   <Truck className="w-6 h-6 text-black shrink-0" /> Live Dispatch Hub
@@ -322,12 +322,12 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
             )}
 
             {/* Quick Helper Emergency Notification */}
-            <div className="bg-[#fbbf24]/5 border-l-4 border-[#fbbf24] p-4 rounded-none text-xs flex gap-3">
-              <AlertCircle className="w-5 h-5 text-[#fbbf24] shrink-0 mt-0.5" />
+            <div className="bg-[#f97316]/5 border-l-4 border-[#f97316] p-4 rounded-none text-xs flex gap-3">
+              <AlertCircle className="w-5 h-5 text-[#f97316] shrink-0 mt-0.5" />
               <div>
-                <p className="font-extrabold text-[#fbbf24] uppercase tracking-wider">Trapped in a slope / heavy crash?</p>
+                <p className="font-extrabold text-[#f97316] uppercase tracking-wider">Trapped in a slope / heavy crash?</p>
                 <p className="text-gray-300 mt-1 leading-relaxed">
-                  If your commercial vehicle is overturned, trapped in a deep ditch, or requires a heavy crane lift, call <a href="tel:0722154729" className="font-black text-[#fbbf24] underline">0722154729</a> immediately for specialized rigging configurations instead of web forms.
+                  If your commercial vehicle is overturned, trapped in a deep ditch, or requires a heavy crane lift, call <a href="tel:0722154729" className="font-black text-[#f97316] underline">0722154729</a> immediately for specialized rigging configurations instead of web forms.
                 </p>
               </div>
             </div>
@@ -340,10 +340,10 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   id="customer-name"
                   type="text"
                   required
-                  placeholder="e.g. Arthur Musieba"
+                  placeholder="e.g. John Doe"
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316]"
                 />
               </div>
 
@@ -357,7 +357,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   placeholder="e.g. 0722 154 729"
                   value={customerPhone}
                   onChange={(e) => setCustomerPhone(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316]"
                 />
               </div>
             </div>
@@ -373,7 +373,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   placeholder="e.g. Mercedes Actros Prime Mover"
                   value={vehicleModel}
                   onChange={(e) => setVehicleModel(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316]"
                 />
               </div>
 
@@ -384,7 +384,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   id="booking-service-select"
                   value={serviceId}
                   onChange={(e) => setServiceId(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] [&>option]:bg-[#1a1a1a]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] [&>option]:bg-[#1a1a1a]"
                 >
                   <option value="light-tow">24/7 Flatbed &amp; Vehicle Towing</option>
                   <option value="heavy-crane">40-Ton Crane Hook &amp; Heavy Rigging</option>
@@ -402,7 +402,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   id="pickup-select"
                   value={pickupLoc}
                   onChange={(e) => setPickupLoc(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] [&>option]:bg-[#1a1a1a]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] [&>option]:bg-[#1a1a1a]"
                 >
                   {routeLandmarks.map((point) => (
                     <option key={point} value={point}>{point}</option>
@@ -410,13 +410,13 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 </select>
                 {pickupLoc === 'OTHER' && (
                   <input
-                    id="pickup-custom"
-                    type="text"
-                    required
-                    placeholder="Describe specific highway point or link..."
-                    value={customPickup}
-                    onChange={(e) => setCustomPickup(e.target.value)}
-                    className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2 text-xs border border-white/10 mt-2 focus:outline-none focus:border-[#fbbf24]"
+                     id="pickup-custom"
+                     type="text"
+                     required
+                     placeholder="Describe specific highway point or link..."
+                     value={customPickup}
+                     onChange={(e) => setCustomPickup(e.target.value)}
+                     className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2 text-xs border border-white/10 mt-2 focus:outline-none focus:border-[#f97316]"
                   />
                 )}
               </div>
@@ -428,7 +428,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   id="dropoff-select"
                   value={dropoffLoc}
                   onChange={(e) => setDropoffLoc(e.target.value)}
-                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] [&>option]:bg-[#1a1a1a]"
+                  className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] [&>option]:bg-[#1a1a1a]"
                 >
                   {destinationYardPool.map((point) => (
                     <option key={point} value={point}>{point}</option>
@@ -442,7 +442,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                     placeholder="Describe specific garage address..."
                     value={customDropoff}
                     onChange={(e) => setCustomDropoff(e.target.value)}
-                    className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2 text-xs border border-white/10 mt-2 focus:outline-none focus:border-[#fbbf24]"
+                    className="w-full bg-[#1a1a1a] text-white rounded-none px-4 py-2 text-xs border border-white/10 mt-2 focus:outline-none focus:border-[#f97316]"
                   />
                 )}
               </div>
@@ -458,7 +458,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   onClick={() => setPaymentMethod('MPESA')}
                   className={`p-3 rounded-none border flex flex-col items-center justify-center gap-1.5 transition-all uppercase tracking-wider text-[11px] font-black ${
                     paymentMethod === 'MPESA'
-                      ? 'bg-[#fbbf24]/10 border-[#fbbf24] text-[#fbbf24]'
+                      ? 'bg-[#f97316]/10 border-[#f97316] text-[#f97316]'
                       : 'bg-[#1a1a1a] border-white/10 text-gray-400 hover:text-white'
                   }`}
                 >
@@ -472,7 +472,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   onClick={() => setPaymentMethod('CARD')}
                   className={`p-3 rounded-none border flex flex-col items-center justify-center gap-1.5 transition-all uppercase tracking-wider text-[11px] font-black ${
                     paymentMethod === 'CARD'
-                      ? 'bg-[#fbbf24]/10 border-[#fbbf24] text-[#fbbf24]'
+                      ? 'bg-[#f97316]/10 border-[#f97316] text-[#f97316]'
                       : 'bg-[#1a1a1a] border-white/10 text-gray-400 hover:text-white'
                   }`}
                 >
@@ -486,7 +486,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   onClick={() => setPaymentMethod('CASH')}
                   className={`p-3 rounded-none border flex flex-col items-center justify-center gap-1.5 transition-all uppercase tracking-wider text-[11px] font-black ${
                     paymentMethod === 'CASH'
-                      ? 'bg-[#fbbf24]/10 border-[#fbbf24] text-[#fbbf24]'
+                      ? 'bg-[#f97316]/10 border-[#f97316] text-[#f97316]'
                       : 'bg-[#1a1a1a] border-white/10 text-gray-400 hover:text-white'
                   }`}
                 >
@@ -500,7 +500,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
             <button
               id="booking-submit-btn"
               type="submit"
-              className="w-full bg-[#fbbf24] hover:bg-white text-black font-black uppercase py-4 text-xs tracking-widest transition-colors rounded-none flex items-center justify-center gap-2"
+              className="w-full bg-[#f97316] hover:bg-white text-black font-black uppercase py-4 text-xs tracking-widest transition-colors rounded-none flex items-center justify-center gap-2"
             >
               Initialize Booking &amp; Quote Pricing <ArrowRight className="w-4 h-4 text-black" />
             </button>
@@ -518,7 +518,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   <span className="text-gray-500 font-bold uppercase tracking-wider text-[9px]">Selected Transit Route</span>
                   <div className="flex items-center gap-2 mt-2 bg-white/5 p-3 border border-white/5">
                     <span className="font-black text-white text-xs">{pickupLoc === 'OTHER' ? 'Custom Highway' : pickupLoc.split(' - ')[0]}</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#fbbf24] shrink-0" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#f97316] shrink-0" />
                     <span className="font-black text-white text-xs line-clamp-1">{dropoffLoc.split(' (')[0].split(' Yard')[0]}</span>
                   </div>
                 </div>
@@ -526,7 +526,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="grid grid-cols-2 gap-3 pt-1 font-mono text-center">
                   <div className="bg-[#1a1a1a] p-3 border border-white/10">
                     <span className="text-[9px] uppercase text-gray-500 block font-black leading-none mb-1">Telemetry Dist.</span>
-                    <span className="text-sm font-black text-[#fbbf24]">{getEstimatedDistance()} KM</span>
+                    <span className="text-sm font-black text-[#f97316]">{getEstimatedDistance()} KM</span>
                   </div>
 
                   <div className="bg-[#1a1a1a] p-3 border border-white/10">
@@ -535,7 +535,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   </div>
                 </div>
 
-                <div className="space-y-2.5 text-xs border-t border-white/10 pt-4 uppercase tracking-wider font-mono text-[#fbbf24]">
+                <div className="space-y-2.5 text-xs border-t border-white/10 pt-4 uppercase tracking-wider font-mono text-[#f97316]">
                   <div className="flex justify-between text-emerald-400 text-[10px]">
                     <span>Cargo Protection</span>
                     <span>Fully Covered</span>
@@ -553,11 +553,11 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
             </div>
 
             {/* Simulated Live Tracking Preview Banner */}
-            <div className="bg-[#151515] p-6 hover:bg-[#fbbf24]/5 transition-colors text-left flex flex-col justify-between space-y-4">
+            <div className="bg-[#151515] p-6 hover:bg-[#f97316]/5 transition-colors text-left flex flex-col justify-between space-y-4">
               <div className="flex items-start gap-4">
-                <Compass className="w-10 h-10 text-[#fbbf24] shrink-0 mt-1 animate-spin duration-10000" />
+                <Compass className="w-10 h-10 text-[#f97316] shrink-0 mt-1 animate-spin duration-10000" />
                 <div className="space-y-1.5">
-                  <span className="text-[9px] bg-[#fbbf24]/10 border border-[#fbbf24]/30 text-[#fbbf24] px-2.5 py-0.5 font-black uppercase tracking-widest">
+                  <span className="text-[9px] bg-[#f97316]/10 border border-[#f97316]/30 text-[#f97316] px-2.5 py-0.5 font-black uppercase tracking-widest">
                     Demo Mode Included
                   </span>
                   <h3 className="text-xs uppercase font-black text-white tracking-wider">Fast-track Demo Simulator</h3>
@@ -575,7 +575,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 }}
                 className="w-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-black py-3.5 text-xs uppercase tracking-widest transition-colors flex items-center justify-center gap-2 rounded-none"
               >
-                Launch Tracking Simulator <Navigation className="w-3.5 h-3.5 text-[#fbbf24]" />
+                Launch Tracking Simulator <Navigation className="w-3.5 h-3.5 text-[#f97316]" />
               </button>
             </div>
           </div>
@@ -588,7 +588,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
           {/* Header */}
           <div className="bg-[#101010] p-6 border-b border-white/10 flex items-center justify-between">
             <div className="space-y-1">
-              <span className="text-[9px] text-[#fbbf24] font-black uppercase tracking-widest block">Secure Payment Gateway</span>
+              <span className="text-[9px] text-[#f97316] font-black uppercase tracking-widest block">Secure Payment Gateway</span>
               <h2 className="text-lg font-black uppercase tracking-tight text-white mt-1">Towing Ticket {activeBooking.id}</h2>
             </div>
             <div className="text-right">
@@ -656,8 +656,8 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                       <div className="bg-emerald-500/10 border border-emerald-500/30 p-4 text-center space-y-3">
                         <BadgeCheck className="w-8 h-8 text-emerald-400 mx-auto" />
                         <div className="space-y-0.5">
-                          <p className="font-black uppercase tracking-wider text-white text-xs">Payment Confirmed!</p>
-                          <p className="text-xs text-emerald-400 font-mono">MPESA Ref: QK42L8W9S received from {activeBooking.customerPhone}</p>
+                           <p className="font-black uppercase tracking-wider text-white text-xs">Payment Confirmed!</p>
+                           <p className="text-xs text-emerald-400 font-mono">MPESA Ref: QK42L8W9S received from {activeBooking.customerPhone}</p>
                         </div>
                       </div>
                     )}
@@ -680,7 +680,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                       maxLength={19}
                       value={cardNumber}
                       onChange={(e) => setCardNumber(e.target.value.replace(/\s?/g, '').replace(/(\d{4})/g, '$1 ').trim())}
-                      className="w-full bg-[#1a1a1a] text-white rounded-none px-3.5 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] font-mono"
+                      className="w-full bg-[#1a1a1a] text-white rounded-none px-3.5 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] font-mono"
                     />
                   </div>
 
@@ -695,7 +695,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                         maxLength={5}
                         value={cardExpiry}
                         onChange={(e) => setCardExpiry(e.target.value)}
-                        className="w-full bg-[#1a1a1a] text-white rounded-none px-3.5 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] font-mono text-center"
+                        className="w-full bg-[#1a1a1a] text-white rounded-none px-3.5 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] font-mono text-center"
                       />
                     </div>
                     <div className="space-y-1">
@@ -708,7 +708,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                         maxLength={3}
                         value={cardCvv}
                         onChange={(e) => setCardCvv(e.target.value)}
-                        className="w-full bg-[#1a1a1a] text-white rounded-none px-3.5 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#fbbf24] font-mono text-center"
+                        className="w-full bg-[#1a1a1a] text-white rounded-none px-3.5 py-2.5 text-xs border border-white/10 focus:outline-none focus:border-[#f97316] font-mono text-center"
                       />
                     </div>
                   </div>
@@ -720,7 +720,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                     id="btn-process-card"
                     onClick={triggerCardProcessing}
                     disabled={isProcessingPay}
-                    className="w-full bg-[#fbbf24] hover:bg-white disabled:bg-white/10 disabled:text-gray-500 text-black font-black py-4 text-xs uppercase tracking-widest transition-colors flex items-center justify-center gap-2 rounded-none"
+                    className="w-full bg-[#f97316] hover:bg-white disabled:bg-white/10 disabled:text-gray-500 text-black font-black py-4 text-xs uppercase tracking-widest transition-colors flex items-center justify-center gap-2 rounded-none"
                   >
                     {isProcessingPay ? 'Processing payment authorization...' : 'Authorize Simulated Card Transaction'}
                   </button>
@@ -739,10 +739,10 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
             {/* If Cash was chosen */}
             {paymentMethod === 'CASH' && (
               <div id="cash-notice-container" className="space-y-4">
-                <div className="bg-[#fbbf24]/5 border border-[#fbbf24]/35 p-4 space-y-2">
-                  <p className="text-xs text-[#fbbf24] font-black uppercase tracking-wider">Cash Payment Option Confirmed</p>
+                <div className="bg-[#f97316]/5 border border-[#f97316]/35 p-4 space-y-2">
+                  <p className="text-xs text-[#f97316] font-black uppercase tracking-wider">Cash Payment Option Confirmed</p>
                   <p className="text-xs text-gray-400 leading-relaxed">
-                    No immediate online transaction simulation is required. You will settle payment directly with our active recovery vehicle operator James Koech upon vehicle dropoff verification at the terminal.
+                    No immediate online transaction simulation is required. You will settle payment directly with our active recovery vehicle operator John Doe upon vehicle dropoff verification at the terminal.
                   </p>
                 </div>
                 
@@ -750,7 +750,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   type="button"
                   id="btn-cash-confirm"
                   onClick={() => setPaySuccess(true)}
-                  className="w-full bg-[#fbbf24] hover:bg-white text-black font-black py-4 text-xs uppercase tracking-widest transition-colors rounded-none"
+                  className="w-full bg-[#f97316] hover:bg-white text-black font-black py-4 text-xs uppercase tracking-widest transition-colors rounded-none"
                 >
                   Proceed to GPS Truck Mapping
                 </button>
@@ -774,7 +774,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
               id="btn-modal-go-track"
               disabled={!paySuccess}
               onClick={finalizeBookingAndTrack}
-              className="bg-[#fbbf24] disabled:bg-white/5 disabled:text-gray-500 hover:bg-white text-black font-black text-xs uppercase py-3.5 px-6 tracking-widest transition-colors rounded-none flex items-center gap-1.5"
+              className="bg-[#f97316] disabled:bg-white/5 disabled:text-gray-500 hover:bg-white text-black font-black text-xs uppercase py-3.5 px-6 tracking-widest transition-colors rounded-none flex items-center gap-1.5"
             >
               Lock-In &amp; Start Live Tracker <ArrowRight className="w-4 h-4 text-black" />
             </button>
@@ -790,8 +790,8 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
           <div className="bg-[#151515] border border-white/10 p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 text-left">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24] animate-ping inline-block" />
-                <span className="text-[9px] bg-[#fbbf24]/10 border border-[#fbbf24]/35 text-[#fbbf24] font-black uppercase px-2.5 py-0.5 tracking-widest">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#f97316] animate-ping inline-block" />
+                <span className="text-[9px] bg-[#f97316]/10 border border-[#f97316]/35 text-[#f97316] font-black uppercase px-2.5 py-0.5 tracking-widest">
                   GPS Live Dispatch Tracker Active
                 </span>
               </div>
@@ -804,10 +804,10 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
               <button
                 id="btn-advance-simulation-step"
                 onClick={handleStepAdvance}
-                className="bg-black border border-white/10 hover:border-[#fbbf24]/50 text-gray-300 hover:text-white px-4 py-3 text-xs font-black uppercase tracking-wider transition-colors flex items-center gap-2 rounded-none"
+                className="bg-black border border-white/10 hover:border-[#f97316]/50 text-gray-300 hover:text-white px-4 py-3 text-xs font-black uppercase tracking-wider transition-colors flex items-center gap-2 rounded-none"
                 title="Advance the tracking step for demonstration purposes"
               >
-                <RefreshCw className="w-3.5 h-3.5 text-[#fbbf24]" /> Force Step Advance
+                <RefreshCw className="w-3.5 h-3.5 text-[#f97316]" /> Force Step Advance
               </button>
 
               <button
@@ -828,8 +828,8 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <h3 className="text-xs font-black uppercase text-gray-400 tracking-widest">Dispatch Timeline</h3>
                 
                 {tracking.status !== 'COMPLETED' ? (
-                  <div className="flex items-center gap-1.5 bg-[#fbbf24]/10 border border-[#fbbf24]/30 px-3 py-1 font-mono text-[#fbbf24] font-black">
-                    <Timer className="w-3.5 h-3.5 text-[#fbbf24]" />
+                  <div className="flex items-center gap-1.5 bg-[#f97316]/10 border border-[#f97316]/30 px-3 py-1 font-mono text-[#f97316] font-black">
+                    <Timer className="w-3.5 h-3.5 text-[#f97316]" />
                     <span className="text-xs">ETA {tracking.etaMinutes} Min</span>
                   </div>
                 ) : (
@@ -845,7 +845,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="relative space-y-0.5">
                   <span className={`absolute -left-[25px] top-0.5 h-4.5 w-4.5 rounded-none border flex items-center justify-center ${
                     ['RECEIVED', 'DISPATCHED', 'EN_ROUTE', 'ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status)
-                      ? 'bg-[#fbbf24] border-[#fbbf24] text-black font-black'
+                      ? 'bg-[#f97316] border-[#f97316] text-black font-black'
                       : 'bg-[#1a1a1a] border-white/10'
                   }`}>
                     {['RECEIVED', 'DISPATCHED', 'EN_ROUTE', 'ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status) && <span className="text-[9px] font-black font-mono">1</span>}
@@ -858,7 +858,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="relative space-y-0.5">
                   <span className={`absolute -left-[25px] top-0.5 h-4.5 w-4.5 rounded-none border flex items-center justify-center ${
                     ['DISPATCHED', 'EN_ROUTE', 'ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status)
-                      ? 'bg-[#fbbf24] border-[#fbbf24] text-black font-black'
+                      ? 'bg-[#f97316] border-[#f97316] text-black font-black'
                       : 'bg-[#1a1a1a] border-white/10'
                   }`}>
                     {['DISPATCHED', 'EN_ROUTE', 'ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status) && <span className="text-[9px] font-black font-mono">2</span>}
@@ -871,7 +871,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="relative space-y-0.5">
                   <span className={`absolute -left-[25px] top-0.5 h-4.5 w-4.5 rounded-none border flex items-center justify-center ${
                     ['EN_ROUTE', 'ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status)
-                      ? 'bg-[#fbbf24] border-[#fbbf24] text-black font-black'
+                      ? 'bg-[#f97316] border-[#f97316] text-black font-black'
                       : 'bg-[#1a1a1a] border-white/10'
                   }`}>
                     {['EN_ROUTE', 'ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status) && <span className="text-[9px] font-black font-mono">3</span>}
@@ -884,7 +884,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="relative space-y-0.5">
                   <span className={`absolute -left-[25px] top-0.5 h-4.5 w-4.5 rounded-none border flex items-center justify-center ${
                     ['ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status)
-                      ? 'bg-[#fbbf24] border-[#fbbf24] text-black font-black'
+                      ? 'bg-[#f97316] border-[#f97316] text-black font-black'
                       : 'bg-[#1a1a1a] border-white/10'
                   }`}>
                     {['ARRIVED', 'SECURED', 'COMPLETED'].includes(tracking.status) && <span className="text-[9px] font-black font-mono">4</span>}
@@ -897,7 +897,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="relative space-y-0.5">
                   <span className={`absolute -left-[25px] top-0.5 h-4.5 w-4.5 rounded-none border flex items-center justify-center ${
                     ['SECURED', 'COMPLETED'].includes(tracking.status)
-                      ? 'bg-[#fbbf24] border-[#fbbf24] text-black font-black'
+                      ? 'bg-[#f97316] border-[#f97316] text-black font-black'
                       : 'bg-[#1a1a1a] border-white/10'
                   }`}>
                     {['SECURED', 'COMPLETED'].includes(tracking.status) && <span className="text-[9px] font-black font-mono">5</span>}
@@ -923,15 +923,15 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
               {/* Driver Stats details */}
               <div className="bg-[#101010] p-4 border border-white/10 space-y-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-white/5 border border-white/10 text-[#fbbf24] text-sm font-black flex items-center justify-center shrink-0">
-                    JK
+                  <div className="w-12 h-12 bg-white/5 border border-white/10 text-[#f97316] text-sm font-black flex items-center justify-center shrink-0">
+                    JD
                   </div>
                   <div>
                     <h4 className="text-xs font-black uppercase text-white">{tracking.driverName}</h4>
-                    <p className="text-[9px] text-[#fbbf24] font-bold font-mono tracking-wider">{tracking.driverPlate} • {tracking.driverVehicle.split(' ')[0]}</p>
+                    <p className="text-[9px] text-[#f97316] font-bold font-mono tracking-wider">{tracking.driverPlate} • {tracking.driverVehicle.split(' ')[0]}</p>
                     <div className="flex items-center gap-1.5 mt-1">
-                      <Star className="w-3.5 h-3.5 fill-[#fbbf24] text-[#fbbf24]" />
-                      <span className="text-[10px] font-bold text-[#fbbf24]">{tracking.driverRating}</span>
+                      <Star className="w-3.5 h-3.5 fill-[#f97316] text-[#f97316]" />
+                      <span className="text-[10px] font-bold text-[#f97316]">{tracking.driverRating}</span>
                       <span className="text-[10px] text-gray-500 font-mono">(840 Rescues)</span>
                     </div>
                   </div>
@@ -940,11 +940,11 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 <div className="grid grid-cols-2 gap-2 pt-1">
                   <a
                     href="tel:0722154729"
-                    className="bg-[#1a1a1a] border border-white/10 hover:border-[#fbbf24] text-white font-black text-[11px] uppercase tracking-wider py-2.5 transition-colors text-center flex items-center justify-center gap-1.5"
+                    className="bg-[#1a1a1a] border border-white/10 hover:border-[#f97316] text-white font-black text-[11px] uppercase tracking-wider py-2.5 transition-colors text-center flex items-center justify-center gap-1.5"
                   >
-                    <PhoneCall className="w-3.5 h-3.5 text-[#fbbf24]" /> Call Operator
+                    <PhoneCall className="w-3.5 h-3.5 text-[#f97316]" /> Call Operator
                   </a>
-                  <div className="bg-white/5 text-gray-500 font-black text-[9px] uppercase tracking-widest flex items-center justify-center border border-white/5 select-none">
+                  <div className="bg-white/5 text-gray-500 font-black text-[9px] uppercase tracking-widest flex items-center justify-center border border-white/5 select-none font-mono">
                     GPS LOCK
                   </div>
                 </div>
@@ -955,7 +955,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
             <div id="tracker-svg-map-canvas" className="lg:col-span-8 bg-black overflow-hidden relative">
               <div className="bg-[#101010] p-4 border-b border-white/10 flex items-center justify-between text-xs">
                 <div className="flex items-center gap-2">
-                  <Compass className="w-4 h-4 text-[#fbbf24] animate-spin" />
+                  <Compass className="w-4 h-4 text-[#f97316] animate-spin" />
                   <span className="font-extrabold uppercase text-white tracking-widest text-[10px]">VECTOR CORE GEOGRAPHY HUD</span>
                 </div>
                 
@@ -963,7 +963,7 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   <span className="text-gray-400 uppercase font-black text-[9px] tracking-widest">{tracking.routeProgress}% COMPLETE</span>
                   <div className="w-20 bg-white/5 h-1.5 rounded-none overflow-hidden border border-white/10">
                     <div 
-                      className="bg-[#fbbf24] h-full transition-all duration-300"
+                      className="bg-[#f97316] h-full transition-all duration-300"
                       style={{ width: `${tracking.routeProgress}%` }}
                     />
                   </div>
@@ -1018,10 +1018,10 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                     strokeLinejoin="round"
                     fill="none"
                   />
-                  {/* Yellow highway center line */}
+                  {/* Yellow highway center line shifted to Orange center line */}
                   <path
                     d="M 100 120 C 180 90 280 260 420 220 C 530 190 600 320 700 290"
-                    stroke="#fbbf24"
+                    stroke="#f97316"
                     strokeWidth="1"
                     strokeDasharray="6 6"
                     strokeLinecap="round"
@@ -1049,9 +1049,9 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                   {/* MAP PLACES & CALLOUTS */}
                   
                   {/* Depot Marker (Base Point) */}
-                  <circle cx="100" cy="120" r="10" fill="#fbbf24" fillOpacity="0.1" />
-                  <rect x="94" y="114" width="12" height="12" fill="#fbbf24" stroke="black" strokeWidth="1.5" />
-                  <text x="75" y="96" fill="#fbbf24" fontSize="9" fontWeight="black" letterSpacing="1" uppercase="true">DEPOT HQ</text>
+                  <circle cx="100" cy="120" r="10" fill="#f97316" fillOpacity="0.1" />
+                  <rect x="94" y="114" width="12" height="12" fill="#f97316" stroke="black" strokeWidth="1.5" />
+                  <text x="75" y="96" fill="#f97316" fontSize="9" fontWeight="black" letterSpacing="1" uppercase="true">DEPOT HQ</text>
 
                   {/* Breakdown Site Pin (Stranded Vehicle) */}
                   <circle cx="420" cy="220" r="14" fill="#ef4444" fillOpacity="0.15" />
@@ -1093,17 +1093,17 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                     return (
                       <g>
                         {/* Moving truck icon base glowing dot */}
-                        <circle cx={tx} cy={ty} r="20" fill="#fbbf24" fillOpacity="0.2" />
+                        <circle cx={tx} cy={ty} r="20" fill="#f97316" fillOpacity="0.2" />
                         
                         {/* Directed arrow representing truck */}
                         <g transform={`translate(${tx - 12}, ${ty - 12})`}>
-                          <rect width="24" height="24" rx="0" fill="#fbbf24" stroke="#000" strokeWidth="2" />
+                          <rect width="24" height="24" rx="0" fill="#f97316" stroke="#000" strokeWidth="2" />
                           <path d="M12 5V19M12 5L7 10M12 5L17 10" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" transform="rotate(78 12 12)" />
                         </g>
 
                         {/* Driver flag text */}
                         <g transform={`translate(${tx - 40}, ${ty - 36})`}>
-                          <rect width="80" height="18" fill="#151515" stroke="#fbbf24" strokeWidth="1.5" />
+                          <rect width="80" height="18" fill="#151515" stroke="#f97316" strokeWidth="1.5" />
                           <text x="40" y="12" fill="#ffffff" fontSize="8" fontWeight="black" letterSpacing="0.5" textAnchor="middle" className="font-mono">SOLOO REG-1</text>
                         </g>
                       </g>
@@ -1125,15 +1125,15 @@ export default function TrackingDashboard({ preselectedServiceId, onBookingCreat
                 {/* Map Floating HUD Legend info overlay */}
                 <div className="absolute bottom-4 left-4 bg-black/90 border border-white/10 p-3 rounded-none text-[9px] text-gray-400 space-y-1 max-w-[190px] text-left">
                   <p className="font-black text-white uppercase tracking-widest leading-none mb-1.5 border-b border-white/10 pb-1">MAP CHRONICLE</p>
-                  <p className="flex items-center gap-1.5"><span className="h-2 w-2 bg-[#fbbf24] inline-block" /> Soloo Recovery Depot</p>
+                  <p className="flex items-center gap-1.5"><span className="h-2 w-2 bg-[#f97316] inline-block" /> Soloo Recovery Depot</p>
                   <p className="flex items-center gap-1.5"><span className="h-2 w-2 bg-[#ef4444] inline-block" /> Stranded Breakdown Vehicle</p>
                   <p className="flex items-center gap-1.5"><span className="h-2 w-2 bg-[#10b981] inline-block" /> Destination CMC Yard</p>
                   <p className="flex items-center gap-1.5"><span className="h-2 w-2 bg-[#2a2a2a] inline-block" /> Parol vehicle standby grids</p>
                 </div>
 
                 {/* Simulated Notification Toast Pop-ups dynamically */}
-                <div className="absolute top-4 right-4 bg-black/95 border border-[#fbbf24]/30 p-3.5 shadow-2xl max-w-xs space-y-1 text-xs text-left">
-                  <div className="flex items-center gap-1.5 text-[#fbbf24] font-black uppercase tracking-wider text-[10px]">
+                <div className="absolute top-4 right-4 bg-black/95 border border-[#f97316]/30 p-3.5 shadow-2xl max-w-xs space-y-1 text-xs text-left">
+                  <div className="flex items-center gap-1.5 text-[#f97316] font-black uppercase tracking-wider text-[10px]">
                     <Sparkles className="w-3.5 h-3.5" /> Simulation Guidance
                   </div>
                   <p className="text-gray-400 leading-relaxed text-[11px]">
