@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  ArrowRight, Phone, ShieldCheck, Compass, HardHat, Clock, Edit2, X, Eye, EyeOff
+  ArrowRight, Phone, ShieldCheck, Compass, HardHat, Clock, Edit2, X, Eye, EyeOff,
+  Truck, Megaphone, Package, Layers
 } from 'lucide-react';
 import { TabType } from '../types';
 import { useAdmin } from './AdminContext';
@@ -167,15 +168,17 @@ export default function Hero({ onSelectTab }: HeroProps) {
               </div>
               
               <div className="flex flex-col gap-1.5 text-left">
-                <label className="text-[8.5px] uppercase tracking-widest text-zinc-500 font-bold">Service Required</label>
+                <label className="text-[8.5px] uppercase tracking-widest text-[#f97316] font-bold font-sans">Service Required</label>
                 <select 
                   value={serviceType}
                   onChange={(e) => setServiceType(e.target.value)}
-                  className="bg-white border border-zinc-300 rounded-xs px-3 py-2 text-xs text-zinc-900 focus:outline-none focus:border-[#f97316] transition-colors"
+                  className="bg-white border border-zinc-350 rounded-none px-3 py-2 text-xs text-zinc-950 font-bold focus:outline-none focus:border-[#f97316] transition-colors"
                 >
-                  <option value="heavy-tow">Heavy Duty Crane</option>
-                  <option value="light-tow">Flatbed / Towing</option>
-                  <option value="forklift">Forklift Rental</option>
+                  <option value="vehicle-towing">1. Vehicle Towing</option>
+                  <option value="cranes-heavy-lifting">2. Cranes & Heavy Lifting</option>
+                  <option value="heavy-machinery">3. Heavy Machinery Transport</option>
+                  <option value="roadshows">4. Roadshows</option>
+                  <option value="forklifts">5. Forklifts</option>
                 </select>
               </div>
             </div>
@@ -191,33 +194,84 @@ export default function Hero({ onSelectTab }: HeroProps) {
         </div>
 
         {/* Right Side Services Grid (5 columns) */}
-        <div className="lg:col-span-5 flex flex-col bg-zinc-50">
+        <div className="lg:col-span-12 xl:col-span-5 flex flex-col bg-zinc-50 border-t lg:border-t-0 lg:border-l border-zinc-200">
+          <div className="p-5 border-b border-zinc-200 bg-white">
+            <span className="text-[9px] text-[#f97316] font-black uppercase tracking-widest block">SOLOO CORE CAPABILITIES</span>
+            <h3 className="text-sm font-extrabold uppercase text-neutral-950 tracking-tight mt-0.5">Highlighted Heavy Services</h3>
+          </div>
           
-          {/* Services Grid with white tiles */}
-          <div className="flex-1 grid grid-cols-2 bg-zinc-100">
-            <div className="p-6 sm:p-8 bg-white border-b border-r border-zinc-200 flex flex-col justify-center space-y-2 text-left">
-              <div className="text-[#f97316] text-xl font-black italic">01</div>
-              <h4 className="font-extrabold uppercase text-xs tracking-wider text-zinc-950">24/7 Response</h4>
-              <p className="text-[10px] text-zinc-650 leading-relaxed font-bold">Instant call response for off-road towing rescues.</p>
-            </div>
+          <div className="flex-1 flex flex-col divide-y divide-zinc-100 bg-white">
             
-            <div className="p-6 sm:p-8 bg-white border-b border-zinc-200 flex flex-col justify-center space-y-2 text-left">
-              <div className="text-[#f97316] text-xl font-black italic">02</div>
-              <h4 className="font-extrabold uppercase text-xs tracking-wider text-zinc-950">Heavy Crane</h4>
-              <p className="text-[10px] text-zinc-650 leading-relaxed font-bold">Rotator crane rigs pulling trailer loads safely.</p>
+            {/* Service 1 */}
+            <div className="p-5 flex items-start gap-4 hover:bg-zinc-50/80 transition-colors">
+              <div className="flex flex-col items-center flex-shrink-0">
+                <span className="text-xs font-black text-[#f97316] font-mono leading-none mb-1">01</span>
+                <Truck className="w-5 h-5 text-[#f97316] shrink-0" />
+              </div>
+              <div className="space-y-1 text-left">
+                <h4 className="font-extrabold uppercase text-xs tracking-wider text-neutral-950">Vehicle Towing</h4>
+                <p className="text-[11.5px] text-zinc-600 leading-relaxed font-semibold">
+                  Continuous highway standby. High-visibility <strong className="text-[#f97316] font-extrabold">branded SOLOO safety orange</strong> flatbeds and heavy wreckers handle recovery dispatches immediately.
+                </p>
+              </div>
             </div>
-            
-            <div className="p-6 sm:p-8 bg-white border-r border-zinc-200 flex flex-col justify-center space-y-2 text-left">
-              <div className="text-[#f97316] text-xl font-black italic">03</div>
-              <h4 className="font-extrabold uppercase text-xs tracking-wider text-zinc-950">Forklifts</h4>
-              <p className="text-[10px] text-zinc-650 leading-relaxed font-bold">Industrial yard lifters ready for pallet dispatch.</p>
+
+            {/* Service 2 */}
+            <div className="p-5 flex items-start gap-4 hover:bg-zinc-50/80 transition-colors">
+              <div className="flex flex-col items-center flex-shrink-0">
+                <span className="text-xs font-black text-[#f97316] font-mono leading-none mb-1">02</span>
+                <HardHat className="w-5 h-5 text-[#f97316] shrink-0" />
+              </div>
+              <div className="space-y-1 text-left">
+                <h4 className="font-extrabold uppercase text-xs tracking-wider text-neutral-950">Cranes & Heavy Lifting</h4>
+                <p className="text-[11.5px] text-zinc-600 leading-relaxed font-semibold">
+                  Telescopic mobile cranes, hydraulic rotators, and rigging coordinators certified to complete complex lifting operations and recover cargo loads safely.
+                </p>
+              </div>
             </div>
-            
-            <div className="p-6 sm:p-8 bg-white flex flex-col justify-center space-y-2 text-left">
-              <div className="text-[#f97316] text-xl font-black italic">04</div>
-              <h4 className="font-extrabold uppercase text-xs tracking-wider text-zinc-950">GPS Dispatch</h4>
-              <p className="text-[10px] text-zinc-650 leading-relaxed font-bold">Real-time driver location and transit mapping.</p>
+
+            {/* Service 3 */}
+            <div className="p-5 flex items-start gap-4 hover:bg-zinc-50/80 transition-colors">
+              <div className="flex flex-col items-center flex-shrink-0">
+                <span className="text-xs font-black text-[#f97316] font-mono leading-none mb-1">03</span>
+                <Layers className="w-5 h-5 text-[#f97316] shrink-0" />
+              </div>
+              <div className="space-y-1 text-left">
+                <h4 className="font-extrabold uppercase text-xs tracking-wider text-neutral-950">Heavy Machinery Transport</h4>
+                <p className="text-[11.5px] text-zinc-600 leading-relaxed font-semibold">
+                  Safe direct relocation for abnormal loads, factory equipment, heavy plant assets, and structural containers across the East African network.
+                </p>
+              </div>
             </div>
+
+            {/* Service 4 */}
+            <div className="p-5 flex items-start gap-4 hover:bg-zinc-50/80 transition-colors">
+              <div className="flex flex-col items-center flex-shrink-0">
+                <span className="text-xs font-black text-[#f97316] font-mono leading-none mb-1">04</span>
+                <Megaphone className="w-5 h-5 text-[#f97316] shrink-0" />
+              </div>
+              <div className="space-y-1 text-left">
+                <h4 className="font-extrabold uppercase text-xs tracking-wider text-neutral-950">Roadshows</h4>
+                <p className="text-[11.5px] text-zinc-600 leading-relaxed font-semibold">
+                  Full promotional stage transits, multi-ton speaker trailers, customized rig power, and logistics coordination for regional marketing tours.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 5 */}
+            <div className="p-5 flex items-start gap-4 hover:bg-zinc-50/80 transition-colors">
+              <div className="flex flex-col items-center flex-shrink-0">
+                <span className="text-xs font-black text-[#f97316] font-mono leading-none mb-1">05</span>
+                <Package className="w-5 h-5 text-[#f97316] shrink-0" />
+              </div>
+              <div className="space-y-1 text-left">
+                <h4 className="font-extrabold uppercase text-xs tracking-wider text-neutral-950">Forklifts</h4>
+                <p className="text-[11.5px] text-zinc-600 leading-relaxed font-semibold">
+                  Yard logistics with high-capacity <strong className="text-[#f97316] font-extrabold">branded SOLOO orange safety forklifts</strong> leased to ensure swift depot container stacking.
+                </p>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -302,11 +356,11 @@ export default function Hero({ onSelectTab }: HeroProps) {
                           {item.badge}
                         </div>
                       </div>
-                      <div className="space-y-1">
-                        <h4 className="font-black text-zinc-900 text-xs sm:text-sm uppercase tracking-tight group-hover:text-[#f97316] transition-colors">
-                          {item.thumbAlt}
+                      <div className="space-y-1.5">
+                        <h4 className="font-black text-zinc-950 text-xs sm:text-sm uppercase tracking-tight group-hover:text-[#f97316] transition-colors">
+                          {item.title}
                         </h4>
-                        <p className="text-[10.5px] text-zinc-650 font-medium leading-normal text-left">
+                        <p className="text-[11px] text-zinc-600 font-semibold leading-relaxed text-left">
                           {item.subtext}
                         </p>
                       </div>

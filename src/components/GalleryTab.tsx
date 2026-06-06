@@ -143,7 +143,7 @@ export default function GalleryTab() {
 
       {/* Main Interactive Slideshow Banner */}
       {galleryItems.length === 0 ? (
-        <div className="p-16 border-2 border-dashed border-zinc-300 text-center space-y-3 bg-zinc-55">
+        <div className="p-16 border-2 border-dashed border-zinc-300 text-center space-y-3 bg-zinc-50">
           <Camera className="w-12 h-12 text-[#f97316] mx-auto opacity-50" />
           <h3 className="font-extrabold uppercase tracking-tight text-zinc-950 text-sm">No Fleet Photos in Gallery</h3>
           <p className="text-zinc-500 text-xs max-w-sm mx-auto">Toggle or utilize Admin options to instantly upload high-resolution photography files.</p>

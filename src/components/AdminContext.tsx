@@ -6,6 +6,8 @@ import steelFrameCrane from '../assets/images/steel_frame_crane_1780604511226.pn
 import yardShunterHeavy from '../assets/images/yard_shunter_heavy_1780604526365.png';
 import refineryTankRigging from '../assets/images/refinery_tank_rigging_1780604542248.png';
 import industrialHopperLift from '../assets/images/industrial_hopper_lift_1780604557089.png';
+import solooOrangeForklift from '../assets/images/soloo_orange_forklift_1780773296565.png';
+import solooOrangeTow from '../assets/images/soloo_orange_tow_1780773311136.png';
 
 export interface GalleryItem {
   id: string;
@@ -72,6 +74,24 @@ const AdminContext = createContext<AdminContextProps | undefined>(undefined);
 
 // Initial Lists to seed empty storage (Preserving original photography of Soloo Trucks Recovery)
 const initialGallery: GalleryItem[] = [
+  {
+    id: 'slide-soloo-orange-tow',
+    image: solooOrangeTow,
+    thumbAlt: 'Orange SOLOO branded recovery flatbed tow truck',
+    badge: 'Heavy Recovery',
+    title: 'SOLOO HEAVY HIGHWAY TOWING',
+    subtext: 'Worldclass safety orange recovery vehicle with prominent SOLOO branding retrieving transport assets under tight schedule parameters.',
+    spec: '24/7/365 active dispatch.'
+  },
+  {
+    id: 'slide-soloo-orange-forklift',
+    image: solooOrangeForklift,
+    thumbAlt: 'Orange SOLOO branded industrial heavy yard forklift',
+    badge: 'Yard Logistics',
+    title: 'SOLOO LOAD YARD FORKLIFT',
+    subtext: 'High-mast warehouse handling with vibrant orange chassis branded by SOLOO, delivering precision container and gear relocations.',
+    spec: 'Advanced yard controllers.'
+  },
   {
     id: 'slide-steel-crane',
     image: steelFrameCrane,
@@ -159,14 +179,28 @@ const initialServices: ServiceDetail[] = [
 ];
 
 const initialHero: HeroContent = {
-  badgeText: 'STANDBY FLEET 24/7',
+  badgeText: 'WORLDCLASS STANDBY FLEET 24/7',
   titleMain: 'Heavy duty',
-  titleHighlight: 'Response',
-  titleSuffix: 'Unit',
-  description: 'Emergency towing, heavy crane lifts, and forklift operations. Real-time GPS dispatches across Kenya, Uganda, and Tanzania.'
+  titleHighlight: 'Soloo',
+  titleSuffix: 'Active Unit',
+  description: 'Pro-grade emergency towing speed, heavy forklift yard dispatches, and rotator cranes. Real-time GPS transit tracking across Kenya, Uganda, and Tanzania corridor hubs.'
 };
 
 const initialBlogs: BlogItem[] = [
+  {
+    id: 'blog-soloo-forklifts',
+    title: 'Optimizing Warehouse Logistics with High-Visibility SOLOO Forklifts',
+    excerpt: 'How SOLOO branded heavy yard forklifts improve depot throughput safety times and avoid high-traffic container mishaps.',
+    content: `Efficient yard logistics depend on mechanical stability, visibility, and professional site routing.
+
+- **Vibrant Safety Orange Chassis**: Ensures high day-and-night visibility across active transport lanes.
+- **Heavy Load Ratings**: Handled by certified crew captains with rigorous load placement checks.
+- **Dual-Mast Systems**: Perfect for structural warehouse stacking and swift distribution dispatches.`,
+    category: 'Depot Logistics',
+    author: 'Sarah Ochieng',
+    image: solooOrangeForklift,
+    date: 'June 05, 2026'
+  },
   {
     id: 'blog-safe-rigging',
     title: 'Industrial Rigging Protocols',
@@ -192,7 +226,7 @@ const initialBlogs: BlogItem[] = [
 - Do not sit inside stationary chassis cabins.`,
     category: 'Safety',
     author: 'Sarah Ochieng',
-    image: tractorCarrier,
+    image: solooOrangeTow,
     date: 'May 28, 2026'
   }
 ];
@@ -215,7 +249,7 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   useEffect(() => {
     const savedGallery = localStorage.getItem('soloo_gallery_items');
-    if (savedGallery) {
+    if (savedGallery && savedGallery.includes('slide-soloo-orange-tow')) {
       try {
         setGalleryItemsState(JSON.parse(savedGallery));
       } catch (e) {
@@ -223,6 +257,7 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }
     } else {
       setGalleryItemsState(initialGallery);
+      localStorage.setItem('soloo_gallery_items', JSON.stringify(initialGallery));
     }
 
     const savedServices = localStorage.getItem('soloo_services_list');
@@ -237,7 +272,7 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
 
     const savedBlogs = localStorage.getItem('soloo_blogs_list');
-    if (savedBlogs) {
+    if (savedBlogs && savedBlogs.includes('blog-soloo-forklifts')) {
       try {
         setBlogsListState(JSON.parse(savedBlogs));
       } catch (e) {
@@ -245,10 +280,11 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }
     } else {
       setBlogsListState(initialBlogs);
+      localStorage.setItem('soloo_blogs_list', JSON.stringify(initialBlogs));
     }
 
     const savedHero = localStorage.getItem('soloo_hero_content');
-    if (savedHero) {
+    if (savedHero && savedHero.includes('Soloo')) {
       try {
         setHeroContentState(JSON.parse(savedHero));
       } catch (e) {
@@ -256,6 +292,7 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }
     } else {
       setHeroContentState(initialHero);
+      localStorage.setItem('soloo_hero_content', JSON.stringify(initialHero));
     }
   }, []);
 

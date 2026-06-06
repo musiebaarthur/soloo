@@ -47,7 +47,7 @@ export default function ContactTab() {
         <h1 className="text-3xl md:text-5xl font-black text-neutral-950 uppercase tracking-tighter leading-none m-0">
           Immediate Towing &amp; Heavy Crane Support
         </h1>
-        <p className="text-zinc-650 text-xs md:text-sm mt-4 max-w-xl leading-relaxed font-bold">
+        <p className="text-zinc-600 text-xs md:text-sm mt-4 max-w-xl leading-relaxed font-semibold">
           Request real-time rotator cranes, flatbed setups, or forklift equipment across East African corridors. Contact our main office directly or submit an online request ticket below.
         </p>
       </div>
@@ -135,13 +135,13 @@ export default function ContactTab() {
             <h2 className="text-xl md:text-2xl font-extrabold uppercase tracking-tight text-neutral-950 mt-1 flex items-center gap-2">
               <FileText className="w-5 h-5 text-[#f97316] shrink-0" /> Web Inquiry ticketing
             </h2>
-            <p className="text-xs text-zinc-650 font-bold leading-relaxed">
+            <p className="text-xs text-zinc-600 font-semibold leading-relaxed">
               Seeking a project quote, yard leasing terms, or forklift contract? Leave your parameters and a duty officer will email you back within 4 hours.
             </p>
           </div>
 
           {errorMsg && (
-            <div className="bg-red-500/10 border border-red-500/30 p-4 rounded-none text-xs text-red-750 font-bold flex gap-2.5 items-start">
+            <div className="bg-red-500/10 border border-red-500/30 p-4 rounded-none text-xs text-red-700 font-bold flex gap-2.5 items-start">
               <AlertCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
               <span>{errorMsg}</span>
             </div>

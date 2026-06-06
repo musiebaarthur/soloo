@@ -63,7 +63,7 @@ export default function Header({ currentTab, onSelectTab }: HeaderProps) {
               SOLOO TRUCKS<br />
               <span className="text-zinc-900 font-extrabold group-hover:text-white font-sans text-[8.5px] tracking-widest block mt-0.5">RECOVERY</span>
             </div>
-            <span className="text-[7px] uppercase tracking-[0.16em] text-zinc-650 font-black mt-0.5">East Africa Network Fleet</span>
+            <span className="text-[7.5px] uppercase tracking-[0.16em] text-[#f97316] font-black mt-0.5">East Africa Network Fleet</span>
           </div>
         </button>
 

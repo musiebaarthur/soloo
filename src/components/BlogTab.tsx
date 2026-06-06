@@ -137,7 +137,7 @@ export default function BlogTab() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#f97316] uppercase tracking-tighter leading-none m-0">
             Operational News &amp; Blog
           </h1>
-          <p className="text-zinc-650 text-xs md:text-sm mt-3 max-w-2xl font-bold leading-relaxed">
+          <p className="text-zinc-600 text-xs md:text-sm mt-3 max-w-2xl font-semibold leading-relaxed">
             Stay updated with heavy hauling guidelines, tow safety standards, and regional logistics announcements written directly by our certified rigger team.
           </p>
         </div>
@@ -221,7 +221,7 @@ export default function BlogTab() {
                 </div>
 
                 {/* Meta details row */}
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[10px] text-zinc-650 font-bold font-mono">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[10px] text-zinc-500 font-bold font-mono">
                   <span className="flex items-center gap-1">
                     <Calendar className="w-3.5 h-3.5 text-[#f97316]" /> {item.date}
                   </span>
@@ -235,7 +235,7 @@ export default function BlogTab() {
                   <h3 className="text-md sm:text-lg font-black uppercase text-zinc-950 tracking-tight group-hover:text-[#f97316] transition-colors duration-150 leading-snug line-clamp-2">
                     {item.title}
                   </h3>
-                  <p className="text-[11px] text-zinc-650 font-semibold leading-relaxed line-clamp-3">
+                  <p className="text-[11.5px] text-zinc-600 font-medium leading-relaxed line-clamp-3">
                     {item.excerpt}
                   </p>
                 </div>
