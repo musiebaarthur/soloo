@@ -22,7 +22,7 @@ export default function Footer({ onSelectTab, onSecretUnlock }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-neutral-950 border-t-2 border-[#f97316] select-none text-xs text-white">
+    <footer className="bg-black border-t-2 border-[#f97316] select-none text-xs text-white">
       {/* Upper footer directories */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
@@ -32,7 +32,7 @@ export default function Footer({ onSelectTab, onSecretUnlock }: FooterProps) {
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-2 text-left focus:outline-none group select-none cursor-pointer"
           >
-            <div className="bg-neutral-900 border border-[#f97316] p-1.5">
+            <div className="bg-neutral-950 border border-[#f97316] p-1.5">
               <CraneLogo className="w-8 h-8 text-[#f97316]" />
             </div>
             <div className="flex flex-col">
@@ -43,17 +43,17 @@ export default function Footer({ onSelectTab, onSecretUnlock }: FooterProps) {
             </div>
           </button>
 
-          <p className="text-white font-semibold leading-relaxed text-[11.5px] md:text-xs">
-            Soloo Trucks Recovery provides <span className="text-yellow-400 font-bold">24/7 heavy rotating cranes</span>, <span className="text-yellow-400 font-bold">reliable flatbed tow services</span>, and <span className="text-yellow-400 font-bold">industrial forklift rentals</span> across all major East African transport corridors.
+          <p className="text-zinc-200 font-semibold leading-relaxed text-[11.5px] md:text-xs">
+            Soloo Trucks Recovery provides <span className="text-[#f97316] font-extrabold">24/7 heavy rotating cranes</span>, <span className="text-white font-extrabold">reliable flatbed tow services</span>, and <span className="text-[#f97316] font-extrabold">industrial forklift rentals</span> across all major East African transport corridors.
           </p>
 
           <div className="space-y-2 text-white font-semibold text-[11px] leading-normal pt-1">
             <p className="flex items-center gap-2">
-              <MapPin className="w-3.5 h-3.5 text-yellow-400 shrink-0" /> 
-              <span>Kondele, Kisumu, Kenya</span>
+              <MapPin className="w-3.5 h-3.5 text-[#f97316] shrink-0" /> 
+              <span className="text-zinc-100">Kondele, Kisumu, Kenya</span>
             </p>
             <p className="flex items-center gap-2">
-              <Mail className="w-3.5 h-3.5 text-yellow-400 shrink-0" /> 
+              <Mail className="w-3.5 h-3.5 text-[#f97316] shrink-0" /> 
               <span className="text-white">dispatch@soloorecovery.com</span>
             </p>
           </div>
@@ -61,57 +61,57 @@ export default function Footer({ onSelectTab, onSecretUnlock }: FooterProps) {
 
         {/* Quick Navigation column - Streamlined to only the 4 core tabs */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-yellow-400 uppercase tracking-[0.15em] border-b border-zinc-800 pb-2">Navigation</h4>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-zinc-900 pb-2">Navigation</h4>
           <div className="flex flex-col gap-2.5">
-            <button onClick={() => handleNavClick('home')} className="text-left text-white hover:text-yellow-300 font-semibold transition-colors cursor-pointer">● Home Page</button>
-            <button onClick={() => handleNavClick('gallery')} className="text-left text-white hover:text-yellow-300 font-semibold transition-colors cursor-pointer">● Fleet Gallery</button>
-            <button onClick={() => handleNavClick('blog')} className="text-left text-white hover:text-yellow-300 font-semibold transition-colors cursor-pointer">● Our Blog</button>
-            <button onClick={() => handleNavClick('contact')} className="text-left text-white hover:text-yellow-300 font-semibold transition-colors cursor-pointer">● Contact Support</button>
+            <button onClick={() => handleNavClick('home')} className="text-left text-white hover:text-[#f97316] font-semibold transition-colors cursor-pointer">● Home Page</button>
+            <button onClick={() => handleNavClick('gallery')} className="text-left text-white hover:text-[#f97316] font-semibold transition-colors cursor-pointer">● Fleet Gallery</button>
+            <button onClick={() => handleNavClick('blog')} className="text-left text-white hover:text-[#f97316] font-semibold transition-colors cursor-pointer">● Our Blog</button>
+            <button onClick={() => handleNavClick('contact')} className="text-left text-white hover:text-[#f97316] font-semibold transition-colors cursor-pointer">● Contact Support</button>
           </div>
         </div>
 
         {/* Active Support columns */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-yellow-400 uppercase tracking-[0.15em] border-b border-zinc-800 pb-2">Active Hotlines Line</h4>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-zinc-900 pb-2">Active Hotlines Line</h4>
           
           <div className="space-y-2.5">
             <a
               href="tel:0722154729"
-              className="bg-neutral-900 border border-zinc-800 hover:border-yellow-400 hover:bg-neutral-800 text-white font-bold py-2.5 px-3 rounded-none flex items-center justify-between transition-all text-[11px]"
+              className="bg-neutral-950 border border-zinc-900 hover:border-[#f97316] hover:bg-neutral-900 text-white font-bold py-2.5 px-3 rounded-none flex items-center justify-between transition-all text-[11px]"
             >
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-yellow-400" />
+                <Phone className="w-3.5 h-3.5 text-[#f97316]" />
                 <span className="font-mono text-white">0722 154 729</span>
               </div>
-              <span className="text-[8px] text-yellow-400 font-black uppercase tracking-widest bg-black px-1.5 py-0.5 border border-yellow-400/30">Safaricom</span>
+              <span className="text-[8px] text-[#f97316] font-black uppercase tracking-widest bg-black px-1.5 py-0.5 border border-[#f97316]/30">Safaricom</span>
             </a>
 
             <a
               href="tel:0735154729"
-              className="bg-neutral-900 border border-zinc-800 hover:border-yellow-400 hover:bg-neutral-800 text-white font-bold py-2.5 px-3 rounded-none flex items-center justify-between transition-all text-[11px]"
+              className="bg-neutral-950 border border-zinc-900 hover:border-[#f97316] hover:bg-neutral-900 text-white font-bold py-2.5 px-3 rounded-none flex items-center justify-between transition-all text-[11px]"
             >
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-yellow-400" />
+                <Phone className="w-3.5 h-3.5 text-[#f97316]" />
                 <span className="font-mono text-white">0735 154 729</span>
               </div>
-              <span className="text-[8px] text-yellow-400 font-black uppercase tracking-widest bg-black px-1.5 py-0.5 border border-yellow-400/30">Airtel</span>
+              <span className="text-[8px] text-[#f97316] font-black uppercase tracking-widest bg-black px-1.5 py-0.5 border border-[#f97316]/30">Airtel</span>
             </a>
           </div>
         </div>
 
         {/* Action Coverage Status */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-yellow-400 uppercase tracking-[0.15em] border-b border-zinc-800 pb-2">HQ Dispatch</h4>
-          <div className="border border-zinc-800 bg-neutral-900 p-3.5 rounded-none flex items-start gap-2.5 text-[10.5px] leading-relaxed text-white font-semibold">
-            <Siren className="w-4 h-4 text-yellow-400 shrink-0 mt-0.5 animate-pulse" />
-            <span>We maintain standby heavy operators stationed across Kenya, Uganda, and Tanzania. Contact our duty controller anytime.</span>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-zinc-900 pb-2">HQ Dispatch</h4>
+          <div className="border border-zinc-900 bg-neutral-950 p-3.5 rounded-none flex items-start gap-2.5 text-[10.5px] leading-relaxed text-white font-semibold">
+            <Siren className="w-4 h-4 text-[#f97316] shrink-0 mt-0.5 animate-pulse" />
+            <span className="text-zinc-100">We maintain standby heavy operators stationed across Kenya, Uganda, and Tanzania. Contact our duty controller anytime.</span>
           </div>
         </div>
 
       </div>
 
       {/* Extreme Bottom Bar Matches Design Precisely */}
-      <div className="bg-black p-5 px-4 md:px-10 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-zinc-400">
+      <div className="bg-black p-5 px-4 md:px-10 border-t border-zinc-950 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-zinc-400">
         <div className="flex flex-col gap-1 text-center md:text-left font-medium select-none">
           <span 
             onDoubleClick={onSecretUnlock}
@@ -123,8 +123,8 @@ export default function Footer({ onSelectTab, onSecretUnlock }: FooterProps) {
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1.5">
-            <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse"></div>
-            <span className="font-bold uppercase tracking-wider text-yellow-400">East African Corridor Coverage</span>
+            <div className="w-1.5 h-1.5 bg-[#f97316] rounded-full animate-pulse"></div>
+            <span className="font-bold uppercase tracking-wider text-[#f97316]">East African Corridor Coverage</span>
           </div>
         </div>
       </div>
