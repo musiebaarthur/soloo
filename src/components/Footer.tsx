@@ -10,9 +10,10 @@ import CraneLogo from './CraneLogo';
 
 interface FooterProps {
   onSelectTab: (tab: TabType) => void;
+  onSecretUnlock?: () => void;
 }
 
-export default function Footer({ onSelectTab }: FooterProps) {
+export default function Footer({ onSelectTab, onSecretUnlock }: FooterProps) {
   const handleNavClick = (tabId: TabType) => {
     onSelectTab(tabId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -21,7 +22,7 @@ export default function Footer({ onSelectTab }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#151515] border-t border-white/10 select-none text-xs text-white">
+    <footer className="bg-neutral-900 border-t border-zinc-800 select-none text-xs text-white">
       {/* Upper footer directories */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
@@ -35,14 +36,14 @@ export default function Footer({ onSelectTab }: FooterProps) {
               <CraneLogo className="w-8 h-8 text-[#f97316]" />
             </div>
             <div className="flex flex-col">
-              <div className="bg-[#f97316] text-black px-3 py-1 border border-black font-black uppercase tracking-tighter text-sm italic leading-none select-none">
+              <div className="bg-[#f97316] text-black px-3 py-1 border border-black font-black uppercase tracking-tighter text-xs italic leading-none select-none">
                 SOLOO TRUCKS<br />
-                <span className="text-zinc-900 font-extrabold font-sans text-[10px]">RECOVERY</span>
+                <span className="text-zinc-900 font-extrabold font-sans text-[9px]">RECOVERY</span>
               </div>
             </div>
           </button>
 
-          <p className="text-zinc-300 font-medium leading-relaxed text-[11px] md:text-xs">
+          <p className="text-zinc-350 font-medium leading-relaxed text-[11px] md:text-xs">
             Soloo Trucks Recovery provides 24/7 heavy rotating cranes, reliable flatbed tow services, and industrial forklift rentals across all major East African transport corridors.
           </p>
 
@@ -58,27 +59,25 @@ export default function Footer({ onSelectTab }: FooterProps) {
           </div>
         </div>
 
-        {/* Quick Navigation column */}
+        {/* Quick Navigation column - Streamlined to only the 4 core tabs */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-white/10 pb-2">Navigation</h4>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-zinc-800 pb-2">Navigation</h4>
           <div className="flex flex-col gap-2.5">
             <button onClick={() => handleNavClick('home')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Home Page</button>
-            <button onClick={() => handleNavClick('services')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Our Services</button>
             <button onClick={() => handleNavClick('gallery')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Fleet Gallery</button>
             <button onClick={() => handleNavClick('blog')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Our Blog</button>
-            <button onClick={() => handleNavClick('track-book')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Track &amp; Book</button>
             <button onClick={() => handleNavClick('contact')} className="text-left text-zinc-300 hover:text-[#f97316] font-medium transition-colors">Contact Support</button>
           </div>
         </div>
 
         {/* Active Support columns */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-white/10 pb-2">Active Hotlines Line</h4>
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-zinc-800 pb-2">Active Hotlines Line</h4>
           
           <div className="space-y-2">
             <a
               href="tel:0722154729"
-              className="bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold py-2 px-3 rounded-none flex items-center justify-between transition-colors text-[11px]"
+              className="bg-white/5 border border-zinc-805 hover:bg-white/10 text-white font-bold py-2 px-3 rounded-none flex items-center justify-between transition-colors text-[11px]"
             >
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#f97316]" />
@@ -89,7 +88,7 @@ export default function Footer({ onSelectTab }: FooterProps) {
 
             <a
               href="tel:0735154729"
-              className="bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold py-2 px-3 rounded-none flex items-center justify-between transition-colors text-[11px]"
+              className="bg-white/5 border border-zinc-805 hover:bg-white/10 text-white font-bold py-2 px-3 rounded-none flex items-center justify-between transition-colors text-[11px]"
             >
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#f97316]" />
@@ -102,8 +101,8 @@ export default function Footer({ onSelectTab }: FooterProps) {
 
         {/* Action Coverage Status */}
         <div className="space-y-4">
-          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-white/10 pb-2">HQ Dispatch</h4>
-          <div className="border border-white/10 bg-white/5 p-3 rounded-none flex items-start gap-2 text-[10px] leading-tight text-zinc-300 font-semibold">
+          <h4 className="text-xs font-black text-[#f97316] uppercase tracking-[0.15em] border-b border-zinc-800 pb-2">HQ Dispatch</h4>
+          <div className="border border-zinc-800 bg-white/5 p-3 rounded-none flex items-start gap-2 text-[10px] leading-tight text-zinc-300 font-semibold">
             <Siren className="w-3.5 h-3.5 text-[#f97316] shrink-0 mt-0.5" />
             <span>We maintain standby heavy operators stationed across Kenya, Uganda, and Tanzania. Contact our duty controller anytime.</span>
           </div>
@@ -112,9 +111,12 @@ export default function Footer({ onSelectTab }: FooterProps) {
       </div>
 
       {/* Extreme Bottom Bar Matches Design Precisely */}
-      <div className="bg-[#101010] p-4 px-4 md:px-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-zinc-400">
-        <div className="flex flex-col gap-1 text-center md:text-left font-medium">
-          <span>
+      <div className="bg-[#101010] p-4 px-4 md:px-10 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-zinc-400">
+        <div className="flex flex-col gap-1 text-center md:text-left font-medium select-none">
+          <span 
+            onDoubleClick={onSecretUnlock}
+            className="cursor-default hover:text-zinc-350 transition-colors"
+          >
             © {currentYear} SOLOO TRUCKS RECOVERY • Licensed &amp; Insured Operators
           </span>
         </div>
@@ -122,7 +124,7 @@ export default function Footer({ onSelectTab }: FooterProps) {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 bg-[#f97316] rounded-full animate-pulse"></div>
-            <span className="font-bold uppercase tracking-wider text-zinc-300">East African Corridor Coverage</span>
+            <span className="font-bold uppercase tracking-wider text-zinc-305">East African Corridor Coverage</span>
           </div>
         </div>
       </div>

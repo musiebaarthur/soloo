@@ -8,8 +8,8 @@
 
 @layer base {
   body {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #09090b;
     font-family: var(--font-sans);
   }
 }

@@ -75,221 +75,125 @@ const initialGallery: GalleryItem[] = [
   {
     id: 'slide-steel-crane',
     image: steelFrameCrane,
-    thumbAlt: 'Construction mobile crane erecting structural steel frames',
-    badge: 'Heavy Crane Lift & Rigging',
-    title: 'STRUCTURAL STEEL FRAME HOISTING',
-    subtext: 'Precision lifting, positioning, and mounting of massive warehouse columns, roof trusses, and metal rafters.',
-    spec: 'Conducted under rigorous tag-line control and qualified rigging engineering protocols.'
+    thumbAlt: 'Steel frame lifting crane',
+    badge: 'Crane Lift & Rigging',
+    title: 'STEEL FRAME HOISTING',
+    subtext: 'High-clarity mobile cranes for structural warehouse column liftings.',
+    spec: 'Certified riggers.'
   },
   {
     id: 'slide-yard-shunter',
     image: yardShunterHeavy,
-    thumbAlt: 'Orange heavy yard shunter tow machine handling shipping container',
-    badge: 'Port Logistics & Yard Tug',
-    title: 'YARD SHUNTING & TERMINAL LOGISTICS',
-    subtext: 'Heavy shunting, terminal trailer relocations, and off-dock container logistics with instant driver routing.',
-    spec: 'Equipped with heavy pin couplers, high torque transmissions, and full visibility cabs.'
+    thumbAlt: 'Heavy container shunter',
+    badge: 'Logistics',
+    title: 'YARD CONTAINER SHUNTING',
+    subtext: 'Relocating shipping containers safely across regional depot yards.',
+    spec: 'Heavy pin couplers.'
   },
   {
     id: 'slide-refinery-crane',
     image: refineryTankRigging,
-    thumbAlt: 'Hydraulic mobile crane rigging near twin vertical storage tanks',
-    badge: 'Silo Machinery & Industrial Rigging',
-    title: 'PLANT REFINERY STORAGE TANK HOISTING',
-    subtext: 'Safe positioning and vertical landing of mammoth food/chemical cylindrical storage silos and refinery hardware.',
-    spec: 'Supervised by senior engineers with full ground load checks and heavy counter ballast.'
-  },
-  {
-    id: 'slide-hopper-lift',
-    image: industrialHopperLift,
-    thumbAlt: 'Orange crane boom lowering industrial funnel hopper unit',
-    badge: 'Bulk Material Rigging & Landings',
-    title: 'INDUSTRIAL HOPPER FUNNEL INSTALLS',
-    subtext: 'High-mast crane lifts to install heavy cylindrical material funnels, gravity hoppers, and factory mixing units.',
-    spec: 'Utilizes certified heavy alloy shackle arrays, Grade-100 steel links, and anti-twist ropes.'
-  },
-  {
-    id: 'slide-tractor',
-    image: tractorCarrier,
-    thumbAlt: 'Oversized machinery and tractors carried on heavy flatbed lowloader',
-    badge: 'Multi-Axle Cargo Transport',
-    title: 'TOUGH LAND TRANSIT TOWING',
-    subtext: 'Interstate haulage of heavy earthmoving machinery, multi-ton diesel generators, and agricultural apparatus.',
-    spec: 'Configured with high-strength load tie-down binds and East Africa transit clearances.'
-  },
-  {
-    id: 'slide-forklift',
-    image: hysterForklift,
-    thumbAlt: 'Industrial forklift organizing factory material loads',
-    badge: 'Depot Rigging & Warehouse Handling',
-    title: 'COMPACT DETAILED FORKLIFT PLACEMENT',
-    subtext: 'High mast yard forklift rentals (2.5 to 10 Tons capacity) for precise pallet racking and machinery shifts.',
-    spec: 'Available with certified on-site forklift operators and heavy container offloading jibs.'
+    thumbAlt: 'Hydraulic plant mobile crane',
+    badge: 'Industrial Rigging',
+    title: 'REFINERY SILO HOISTING',
+    subtext: 'Landed vertical food and chemical cylindrical machinery vaults.',
+    spec: 'Full load checks.'
   }
 ];
 
 const initialServices: ServiceDetail[] = [
   {
     id: 'light-tow',
-    title: '24/7 Fleet Towing & Flatbeds',
-    category: 'Standard Recovery',
-    tagline: 'Reliable flatbed tow trucks for standard light and medium cargo.',
+    title: 'Fleet Flatbeds',
+    category: 'Towing',
+    tagline: 'Flatbed fleet for standard vehicles rescue.',
     basePrice: 5000,
     perKmPrice: 150,
     specs: [
-      { label: 'Max Capacity', value: '4.5 Tons' },
-      { label: 'Average Dispatch', value: '15 - 25 Minutes' },
-      { label: 'Available Units', value: '14 Active Flatbeds' },
-      { label: 'Operating Areas', value: 'Nairobi & Suburbs, Highways' }
+      { label: 'Weight Limit', value: '4.5 Tons' },
+      { label: 'Avg Arrival', value: '15 Mins' }
     ],
     details: [
-      'Hydraulic tilt-tray flatbeds optimized for low-clearance sports cars and luxury models.',
-      'Zero-contact wheel lifts ideal for short-distance repossession and urban parking rescue.',
-      'Fully chain-strapped tire securement to prevent suspension alignment damage.',
-      'Real-time automated status updates with GPS driver tracking systems.'
+      'Hydraulic slide beds.',
+      'Soft wheel ties.'
     ],
-    equipment: ['Isuzu FSR Flatbeds', 'Hydraulic Wheel-Lifts', 'Soft Alloy Rim Straps', 'Heavy Recovery Snatch Blocks'],
-    bestFor: ['Sedans & Coupes', 'SUVs & Compact Crossovers', 'Electric Vehicles (EVs)', 'Motorcycles & ATVs']
+    equipment: ['Isuzu Flatbeds', 'Rim Straps'],
+    bestFor: ['Sedans', 'SUVs']
   },
   {
     id: 'heavy-crane',
-    title: 'Heavy-Duty Cranes & Rigging',
-    category: 'Extreme Recovery',
-    tagline: 'Gigantic diesel cranes built to recover heavy trucks, buses, and rigs.',
+    title: 'Heavy Cranes',
+    category: 'Rigging',
+    tagline: 'Diesel rigs to recover heavy logistics trucks.',
     basePrice: 15000,
     perKmPrice: 350,
     specs: [
-      { label: 'Lifting Force', value: 'Up to 40 Tons' },
-      { label: 'Boom Reach', value: '18 Meters Lateral' },
-      { label: 'Rigging Standard', value: 'BS EN ISO 9001 Certified' },
-      { label: 'Air-Cushion Units', value: '2 High-Pressure Sets' }
+      { label: 'Lift Capacity', value: '40 Tons' },
+      { label: 'Certification', value: 'BS EN ISO' }
     ],
     details: [
-      'Rotator cranes capable of 360-degree pivoting for deep ditch recoveries and highway pile-ups.',
-      'High-pressure pneumatic air bags to upright loaded trailers without cargo offloading.',
-      'Specialist dual-winching lines to hoist heavy buses and prime movers back onto pavement safely.',
-      'Overturned multi-axel recovery operations coordinated by senior rigging engineering.'
+      '360 Rotator cranes.',
+      'Active dual-winches.'
     ],
-    equipment: ['40-Ton Rotator Cranes', 'Heavy Underlift Wreckers', 'Pneumatic Air-Cushion Lifting Jacks', 'Grade-100 Alloy Steel Hooks'],
-    bestFor: ['Prime Movers & Semi-Trailers', 'Industrial Cargo Transporters', 'Commercial Buses & Coaches', 'Earthmovers & Construction Machinery']
+    equipment: ['Rotators', 'Load Cushions'],
+    bestFor: ['Semi Trucks', 'Buses']
   },
   {
     id: 'forklift',
-    title: 'Industrial Forklift Handling',
-    category: 'Specialized Lifters',
-    tagline: 'Heavy load container forklifts and warehouse movers available for immediate lease.',
+    title: 'Forklift Rentals',
+    category: 'Yard Handling',
+    tagline: 'Heavy load fuel or electric container lifters.',
     basePrice: 8000,
     perKmPrice: 200,
     specs: [
-      { label: 'Lifting Weight', value: '2.5 Tons - 10 Tons' },
-      { label: 'Fuel Drives', value: 'Diesel & Electric Options' },
-      { label: 'Power Source', value: 'Heavy Pneumatic Tyres' },
-      { label: 'Special Attachments', value: 'Drum Clamps, Extension Jibs' }
+      { label: 'Load Limit', value: '10 Tons' },
+      { label: 'Options', value: 'Diesel/Electric' }
     ],
     details: [
-      'High mast clearance for warehouse vertical stacking and heavy machinery positioning.',
-      'Skilled licensed operators with deep industrial safety rigging certifications.',
-      'Robust mud-terrain forklift variants suitable for loose-gravel construction jobs and heavy yards.',
-      'Same-day transportation flatbeds to deliver forklifts to your project site on short notice.'
+      'High-mast yard lifts.',
+      'Licensed staff.'
     ],
-    equipment: ['Toyota 8-Series Forklifts', 'CAT Heavy Rough-Terrain Forklifts', 'Custom Spreader Bars', 'Padded Drum Grab Clamps'],
-    bestFor: ['Palletized Container Cargo', 'Heavy Generator Ingress/Egress', 'Factory Machinery Offloading', 'Steel Beam Rigging & Hoisting']
-  },
-  {
-    id: 'roadside',
-    title: 'Specialized Roadside Assist',
-    category: 'Rapid Patrol',
-    tagline: 'Quick-response mobile units dispatched to patch tires, supply fuel, or jump batteries.',
-    basePrice: 3000,
-    perKmPrice: 100,
-    specs: [
-      { label: 'Est. Arrival', value: '10 - 20 Minutes' },
-      { label: 'Mobile Fleet', value: '8 Standby Patrol Cars' },
-      { label: 'Warranty On Jump', value: '7-Day Battery Assist Peace' },
-      { label: 'Tool Outfits', value: '18V Cordless Impact Wrenches' }
-    ],
-    details: [
-      'Professional heavy jumpstarts using smart anti-surge battery boosters to safeguard electric modules.',
-      'Rapid roadside spare swapping with heavy-duty pneumatic impact impact jackhammers.',
-      'Emergency clean diesel or petrol deliveries (up to 20 Litres) when ran empty on remote freeways.',
-      'On-the-spot OBD-II vehicle computerized diagnostics to trace fuel-pump or engine-sensor glitches.'
-    ],
-    equipment: ['High-Output Anti-Surge Boostpack', '12-Volt Specialized Fuel Pumps', 'Pneumatic Trolley Lift Jacks', 'Diagnostic OBD-II Scanners'],
-    bestFor: ['Dead Battery Jumpstart', 'Puncture Repair & Spare Swap', 'Fuel Empty Emergency Tanking', 'Blown Fuses & Small Sensor Tracing']
+    equipment: ['CAT Lift Truck', 'Spreader Bars'],
+    bestFor: ['Pallets', 'Machinery']
   }
 ];
 
 const initialHero: HeroContent = {
-  badgeText: 'ACTIVE STANDBY FLEET (24/7)',
-  titleMain: 'Heavy Duty',
+  badgeText: 'STANDBY FLEET 24/7',
+  titleMain: 'Heavy duty',
   titleHighlight: 'Response',
   titleSuffix: 'Unit',
-  description: 'Specialized roadside assistance, pivot rotator cranes, and forklift services. Real-time fleet tracking ensures we reach you in minutes, not hours. Operating 24/7 across Kenya, Uganda, and Tanzania.'
+  description: 'Emergency towing, heavy crane lifts, and forklift operations. Real-time GPS dispatches across Kenya, Uganda, and Tanzania.'
 };
 
 const initialBlogs: BlogItem[] = [
   {
     id: 'blog-safe-rigging',
-    title: 'Safe Rigging Protocols for Ultra-Heavy Industrial Silos',
-    excerpt: 'Lifting 50-ton storage vessels requires strict balancing, certified steel rigging wire ropes, and active engineering calculations. Read our step-by-step safety compliance manual.',
-    content: `### Industrial Silo Rigging Guidelines
+    title: 'Industrial Rigging Protocols',
+    excerpt: 'Key safety procedures for weight balancing, chain selection, and outrigger deployment in tight plant environments.',
+    content: `Safety metrics require strict Grade-100 chains, secure steel lines, and structural plates.
 
-When handling oversized storage structures or vertical industrial mixers, standard hoisting gear will not suffice. At **Soloo Towing & Recovery**, we coordinate lifting actions under stringent engineering supervisors.
-
-#### 1. Pre-Lift Assessment & Stabilizer Placement
-Before extending any crane booms near vertical tanks, our team performs precise ground load calculation. 
-- Sand and soil must be fortified with structural steel plates.
-- Counter ballast ratios must be tested at 1.25x of estimated drag force.
-- Tag-lines must be pre-threaded to handle regional wind currents.
-
-#### 2. Chain & Coupling Certification
-Only use Grade-100 or higher alloy steel hoist chains. Ensure that all shackle nodes are certified by national standards authorities under EA directives.
-
-#### 3. Real-time Lift Execution
-Heavy dual cranes can lift vertical silo units synchronously. Continuous radio communication and digital load sensors keep operations balanced within less than 0.5% drift deviation.`,
-    category: 'Industrial Rigging',
+- Calculate total boom reach capability.
+- Double-check counter ballast.
+- Confirm ground soil density limits.`,
+    category: 'Operations',
     author: 'Eng. Jane Doe',
     image: refineryTankRigging,
     date: 'June 01, 2026'
   },
   {
     id: 'blog-highway-breakdowns',
-    title: 'How to Respond to Mid-corridor Semi Breakdown in East Africa',
-    excerpt: 'Being stalled on highly busy cargo pathways (like the Eldoret-Nairobi highway) poses immediate physical safety risks. Here is your truck captain roadside survival protocol.',
-    content: `### Corridor Roadside Survival Guide
+    title: 'Highway Hazard Management',
+    excerpt: 'Quick roadside survival protocol for trailer captains encountering sudden system faults on major highway segments.',
+    content: `When stalled, follow these simple steps to ensure safety:
 
-East African transport lanes like the Northern Corridor are saturated with high-tonnage cargo prime movers. An unexpected breakdown can endanger drivers and trigger massive blockages.
-
-#### Step 1: Secure Visibility Instantly
-Position structural red reflective warning triangles at least 100 meters behind and 50 meters ahead of your trailer bed. Deploy yellow warning flag markers on active chassis corners.
-
-#### Step 2: Contact Unified HQ Dispatchers
-Instead of calling unlicensed local towing operators, engage certified fleets. Call the **Soloo Dispatch Hotline** at **0722154729** to calculate instant distance routing and lowbed flatbed dispatch times.
-
-#### Step 3: Evacuate the Cab Space
-Do not sit inside a stalled truck cabin along major freeways. Moving vehicles can crash into stationary structures. Seek refuge behind safety barriers or uphill embankments until heavy recovery wreckage vehicles arrive.`,
-    category: 'Highway Safety',
+- Place reflective warning triangles at 100 meters.
+- Contact our dispatcher instantly for rapid routing.
+- Do not sit inside stationary chassis cabins.`,
+    category: 'Safety',
     author: 'Sarah Ochieng',
     image: tractorCarrier,
     date: 'May 28, 2026'
-  },
-  {
-    id: 'blog-port-tug-logistics',
-    title: 'Why High-Torque Yard Shunters Enhance Depot Efficiencies',
-    excerpt: 'Explore how specialized terminal yard shunters (tugs) speed up high-cadence shipping container maneuvers compared to standard highway prime movers.',
-    content: `### Optimizing Yard and Port Efficiencies
-
-In cargo consolidation yards and container freight depots, swift relocations are paramount. Road-legal cargo prime movers are designed for sustained speed, making them inefficient for short-distance docking.
-
-#### High Torque over Speed
-Yard shunters (tugs) utilize super high ratio differentials to pull high load weights from a dead stop. This minimizes transmission clutch heat even with continuous start-stop actions.
-
-#### Hydraulic Fifth Wheels
-Instead of manually cranking trailer landing legs, yard shunters leverage automated hydraulic lift plates to lift trailer kingpins instantly, reducing decoupling durations by nearly 85%!`,
-    category: 'Depot Logistics',
-    author: 'Arthur Musieba',
-    image: yardShunterHeavy,
-    date: 'May 15, 2026'
   }
 ];
 
